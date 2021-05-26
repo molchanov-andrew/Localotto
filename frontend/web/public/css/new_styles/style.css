@@ -1,0 +1,1759 @@
+/* Layout */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Myriad Set Pro';
+    font-weight: 200;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 28px;
+}
+h5{
+    font-size: 23px;
+}
+h1,h2,h3,h4,h5{
+    color: #60A5E8;
+}
+h1.small, h2.small, h3.small, h4.small{
+    font-size: 19px;
+    margin: 0;
+    display: inline-block;
+    color: #333352;
+    font-weight: 400;
+}
+body {
+    color: #333;
+    font-style: normal;
+    font-family: "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif";
+    line-height: 1.75;
+    font-weight: 500;
+    overflow-x: hidden!important;
+}
+header{
+    border-top: 10px solid #60ADED;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+article a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+select{
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gray;
+    color: gray;
+    width: 150px;
+}
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #60A5E8;
+    color: white;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+footer img{
+    margin: 5px;
+}
+footer .copyright{
+    border-top: 1px solid white;
+    padding-top: 15px;
+}
+.security-text{
+    margin: 0;
+}
+.footer-logo{
+    max-width: 250px;
+}
+.center-div {
+    float: none;
+    margin: 0 auto;
+}
+.footer-menu a.h4:hover{
+    color: rgb(109, 30, 208);
+}
+span.h4 {
+    font-size: 16px;
+}
+.footer-menu {
+    margin-bottom: 25px;
+}
+.min-height{
+    min-height: 10px;
+}
+.navbar-wrapper{
+    margin-top: 20px;
+}
+
+.tools .tool {
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s;
+    z-index: 90;
+    padding: 0px;
+    padding-top: 15px;
+    height: 120px;
+}
+.tools .tool a{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    display: block;
+}
+
+.tools .tool:hover {
+    transform: scale(1.01,1.05);
+    transform-style: preserve-3d;
+    z-index: 91;
+}
+.tools .tool:after {
+    background: #922323;
+}
+
+.tools .tool:nth-child(1) {
+    background-color: #60A5E8;
+}
+.tools .tool:nth-child(2) {
+    background-color: #7BCBC8;
+}
+.tools .tool:nth-child(3) {
+    background-color: #6E1DB8;
+}
+.tools .tool:nth-child(4) {
+    background-color: #F26D80;
+}
+.tools .tool:nth-child(5) {
+    background-color: #468DDF;
+}
+.tools .tool:nth-child(6) {
+    background-color: #43ACA7;
+}
+.tools .tool:nth-child(7) {
+    background-color: #6200FF;
+}
+.tools .tool:nth-child(1):hover {
+    background-color: #3091EF;
+}
+.tools .tool:nth-child(2):hover {
+    background-color: #0ECFC7;
+}
+.tools .tool:nth-child(3):hover {
+    background-color: #6202BA;
+}
+.tools .tool:nth-child(4):hover {
+    background-color: #F43954;
+}
+.tools .tool:nth-child(5):hover {
+    background-color: #1370DB;
+}
+.tools .tool:nth-child(6):hover {
+    background-color: #00C7BD;
+}
+.tools .tool:nth-child(7):hover {
+    background-color: #9163DA;
+}
+
+button.btn.btn-default.dropdown-toggle.btn-languages {
+    padding: 10px;
+    margin-left: 5px;
+}
+a.link {
+    color: rgb(96,165,232);
+    text-decoration: underline;
+    line-height: 30px;
+}
+a.link:hover {
+    color: #F26D80;
+}
+.h1 {
+    font-size: 36px;
+    display: block;
+    color: #60A5E8;
+}
+.h2 {
+    color: #60A5E8;
+}
+.h3 {
+    font-size: 24px;
+    color: #468DDF;
+    text-shadow: 0px 0px;
+    width: 100%;
+}
+article p{
+    font-size: 19px;
+}
+.money.money-dynamic{
+    font-size: 19px;
+    font-weight: 400;
+}
+article ul{
+    list-style-image: url(/public/img/blue_icon_yes.png);
+}
+article ol{
+    list-style-image: url(/public/img/icon_yes.png);
+}
+article table td{
+    border: 1px solid #D8D6D6;
+}
+.modal-body p{
+    color: #333;
+}
+.nav-brand.navbar-left img{
+    min-width: 203px;
+    max-width: 74%;
+    margin:5px 0 0 15px;
+}
+.navbar-collapse {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-collapse.in {
+    overflow: hidden;
+}
+.navbar {
+    margin-bottom: 0px;
+    border: 0px solid transparent;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+}
+.blue-text {
+    color: #6596c9;
+}
+.red-text {
+    color: #f23839;
+}
+.no-icon{
+    background: url(/public/img/icon_no.png) center no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+}
+.yes-icon{
+    background: url(/public/img/icon_yes.png) center no-repeat;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+#mobileWrapTemplate{
+    display: none;
+}
+.collapsible-menu-arrow{
+    display: none;
+}
+.tablet-banner-row img,
+.mobile-banner-row img{
+    max-width: 100%;
+}
+.crypto-banner{
+    margin-top: 20px;
+    display: block;
+}
+/* End Layout */
+/* Admin Elements */
+
+.navbar-nav {
+    margin: auto;
+}
+.cke_textarea_inline.cke_editable.cke_editable_inline.cke_contents_ltr.cke_show_borders{
+    border: 1px solid #65AAC7;
+    border-radius: 5px;
+    padding: 7px;
+    cursor: pointer;
+}
+
+span#editMeta{
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    z-index: 100000;
+}
+
+#title,#seo_keywords,#seo_description,#description_for_home_page,#alt_for_image{
+    width:100%;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+}
+.preview {
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    z-index: 10000;
+}
+.admin-tags{
+    color: green;
+}
+
+/*End Admin Elements */
+/* Bootstrap tables */
+.compare-table >tbody>tr>td, .compare-table>tbody>tr>th, .compare-table>tfoot>tr>td, .compare-table>tfoot>tr>th, .compare-table>thead>tr>td, .compare-table>thead>tr>th {
+    vertical-align: middle;
+}
+.compare-table > thead > tr > th {
+    text-align: center;
+}
+
+.compare-table thead .info{
+    color: whitesmoke;
+    background-color: rgb(197, 76, 76);
+    border: 0px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 5px;
+    width: 23px;
+    height: 20px;
+    display: inline-table;
+}
+.timer-case{
+    max-width: 100px;
+    height: 30px;
+    width: 100px;
+    display: initial;
+}
+.compare-table thead .info:hover{
+    background-color: rgb(76, 124, 197);
+}
+
+.compare-table thead{
+    color: whitesmoke;
+    background-color: rgb(96, 165, 232);
+    font-weight: 400;
+}
+.compare-table thead th {
+    font-weight: 400;
+}
+.compare-table tbody tr:nth-child(even)
+{
+    background-color: #E8F1FC;
+}
+.compare-table tbody td {
+    border-left: none;
+}
+.compare-table.info-table.vcard thead th:nth-child(1){
+    display: inline-block;
+}
+.fixed-table-container thead th .sortable {
+    padding-right: 3px;
+}
+#fixed-header-of-table{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    height: 0px;
+    transition: 0.3s;
+}
+#special-table{
+    margin-top: 0 !important;
+}
+#paginationsToggle{
+    cursor: pointer;
+}
+#fixed-header-of-table thead th .th-inner {
+    padding: 8px;
+    line-height: 24px;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#fixed-header-of-table .table > thead > tr > th {
+    padding: 0px;
+}
+
+.fixed-table-container thead th .sortable {
+    padding-right: 3px;
+    background-image: none !important;
+}
+.filter.table-filter {
+    padding: 10px;
+    background-color: rgb(96, 165, 232);
+    color: white;
+    margin-bottom: 20px;
+}
+#fixed-header-of-table > table {
+    display: block;
+    margin: 0 auto;
+}
+#fixed-header-of-table table thead tr th{
+    border-bottom: 0;
+}
+#fixed-header-of-table table thead th .sortable {
+    background-image: none !important;
+    font-size: 15px;
+}
+.fixed-table-body {
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: auto !important;
+}
+.fixed-table-body .card-view .title {
+    font-weight: 700;
+    display: inline-block;
+    min-width: 100%;
+    text-align: center!important;
+}
+
+.fixed-table-body .card-view .value {
+    text-align: center!important;
+    display: inherit;
+}
+
+.fixed-table-container {
+    height: auto !important;
+    padding-bottom: 0px !important;
+}
+#brokers tr td:nth-child(1){
+    position: relative;
+}
+.pull-left.pagination-detail{
+    display: none;
+}
+.pull-right.pagination{
+    display: none;
+}
+.fixed-table-container {
+    position: relative;
+    clear: both;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.popularLottories.table thead tr th, .popularLottories.table tbody tr td{
+    vertical-align: middle;
+    border: 0px solid #ddd !important;
+}
+.compare-table tbody tr:nth-child(odd) {
+    background-color: #E8F1FC;
+}
+.compare-table tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+#main-table .fixed-table-header .compare-table.table.table-hover th,
+.buy-online-lotto-brokers-top + .bootstrap-table .compare-table.table.table-hover th,
+#lottories-table-change .bootstrap-table .compare-table.table.table-hover th
+{
+    width: 14.2857142857%;
+}
+#main-table .fixed-table-header tr th,
+#main-table .fixed-table-body tr td,
+.buy-online-table-container .bootstrap-table tr th,
+.buy-online-table-container .bootstrap-table tr td,
+#lottories-table-change .bootstrap-table .fixed-table-header tr th,
+#lottories-table-change .bootstrap-table .fixed-table-header tr td
+{
+    width: 14.2857142857%;
+}
+.fixed-table-header{
+    /* TODO: where does it used? */
+    height: 0;
+}
+.bootstrap-table .country-name{
+    padding-top: 10px;
+}
+/* End Bootstrap tables */
+/* Effects */
+.shadows-effect {
+    transition: all 0.3s;
+}
+.shadows-effect:hover {
+    box-shadow: 3px 4px 15px 1px #9D9A9A;
+}
+.border-radius-effect:hover {
+    border-radius: 3px;
+}
+.nav.navbar-nav.navbar-right.blue li a::before,
+.nav.navbar-nav.navbar-right.blue li a::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.2s;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.nav.navbar-nav.navbar-right.blue li a::before {
+    margin-right: 10px;
+    content: '[';
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+.nav.navbar-nav.navbar-right.blue li a::after {
+    margin-left: 10px;
+    content: ']';
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    transform: translateX(-20px);
+}
+
+.nav.navbar-nav.navbar-right.blue li a:hover::before,
+.nav.navbar-nav.navbar-right.blue li a:hover::after,
+.nav.navbar-nav.navbar-right.blue li a:focus::before,
+.nav.navbar-nav.navbar-right.blue li a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+}
+/* End Effects */
+/* Buttons */
+.button-red {
+    border: 0;
+    background-color: rgb(96, 165, 232);
+    border-bottom: 2px solid rgb(23, 124, 223);
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: block;
+}
+.button-red:hover {
+    background-color: rgb(242, 109, 128);
+    border-bottom: 2px solid rgb(226, 54, 79);
+    color: #fff;
+}
+.button-green{
+    border: 0;
+    color: white;
+    padding: 7px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    display: block;
+    background-color: #0AA07E;
+    border-bottom: 2px solid green;
+    line-height: inherit;
+}
+.button-green:hover {
+    background-color: #2DA530;
+}
+
+/* End Buttons */
+/* Slider */
+
+.carousel {
+    margin-bottom: 25px;
+}
+.carousel-caption {
+    left: 10%;
+    top: 10%;
+    bottom: inherit;
+    width: 280px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    height: initial;
+    padding: 15px;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #60A5E8;
+}
+.carousel-caption h3 {
+    color: #468DDF;
+    text-shadow: none;
+    font-weight: 900;
+}
+.carousel-caption p {
+    color: #353434;
+    text-shadow: none;
+}
+.carousel-indicators li{
+    border: 2px solid darkgray;
+}
+.slide span.h4 {
+    margin-top: 25px;
+    display: inline-block;
+    color: #73A5E8;
+    margin-bottom: -20px;
+}
+.carousel-indicators {
+    display: none;
+}
+
+/* End slider */
+/* Article page */
+
+.article-image {
+    width: 250px;
+    text-align: center;
+    margin: 10px;
+    margin-top: 25px;
+    float: left;
+}
+
+/* End Article page */
+/* Home page */
+
+.h1-of-home-page{
+    font-weight: 500;
+    text-align: center;
+}
+.main-header-lastResults span, .main-header-lastNews span{
+    font: 16px / 1.8 Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: white;
+    margin: 5px 0px;
+    font-weight: 400;
+}
+.last-five-results-block{
+    padding: 0px;
+}
+.last-five-results-block .fixed-table-header{
+    height: 0;
+}
+.main-header-lastResults {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(96, 165, 232);
+    color: white;
+}
+.main-header-lastNews {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(109, 30, 208);
+    color: white;
+}
+.main-page-allResults{
+    color: rgb(96, 165, 232);
+    font-size: 20px;
+}
+.main-page-allNews{
+    color: #7D23A2;
+    font-size: 20px;
+}
+.arrow-button:after{
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #428bca;
+}
+.last-news-block {
+    padding: 0px;
+}
+.more-news-HomePage{
+    padding: 5px;
+}
+.more-news-HomePage:hover{
+    box-shadow: 3px 2px 19px 0px rgb(207, 200, 200);
+}
+.main-all {
+    color: #fff !important;
+    width: 100%;
+    background: #0AA07E;
+    text-align: center;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom: 5px solid #08785e;
+    font-size: 20px;
+}
+.hidme {
+    opacity:0;
+}
+.second-header-block {
+    margin-top: 20px;
+    text-align: center;
+}
+#contain {
+    height: 420px;
+    overflow: hidden;
+}
+#main-content-on-home-page .money{
+    color: rgb(96, 165, 232);
+}
+.glyphicon.glyphicon-gift {
+    font-size: 1.25em;
+    display: inline;
+    float: none;
+}
+.last-news-block .row.items div:nth-child(2) h3 {
+    color: #272A2B !important;
+}
+.last-five-results-block .bootstrap-table tr  {
+    display: block;
+    -webkit-box-shadow: 0px 7px 30px -12px gray !important;
+    -moz-box-shadow: 0px 7px 30px -12px gray !important;
+    box-shadow: 0px 7px 30px -12px gray !important;
+}
+.last-five-results-block .bootstrap-table table tr:hover {
+    background-color: #f5f5f5;
+}
+.second-header-block {
+    margin-top: 80px;
+}
+.bootstrap-table .fixed-table-container .fixed-table-header table thead{
+    display: none !important;
+}
+.bootstrap-table .fixed-table-container .fixed-table-body table thead{
+    /*display: none !important;*/
+}
+.brokers-table,
+#lottories-table-change .fixed-table-body table,
+#align-circles,
+#buy-ticket,
+#broker-online-buy,
+#broker-counter .bootstrap-table .fixed-table-body table{
+    margin-top: 0 !important;
+}
+/* End Home page */
+/* Brokers page */
+
+span.search {
+    background-color: rgb(242, 109, 128);
+    border-bottom: 2px solid rgb(226, 54, 79);
+    padding: 4px 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-top: 5px;
+}
+span.search:hover {
+    background-color: rgb(125, 35, 162);
+    border-bottom: 2px solid rgb(133, 90, 150);
+}
+.main-page-brokers-logo{
+    transition: all 0.3s;
+}
+.main-page-brokers-logo.brokers {
+    padding: 15px;
+}
+.main-page-brokers-logo.brokers:hover{
+    box-shadow: 3px 3px 15px 1px rgba(157, 154, 154, 0.7);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main-page-brokers-logo:hover .pop-up {
+    z-index: 999;
+    opacity: 1;
+}
+.pop-up {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding: 10px;
+    position: absolute;
+    width: 250px;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    opacity: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    line-break: auto;
+    text-align: justify;
+}
+
+.broker-trade-mark { /*broker for mobile style*/
+    width: 275px;
+    background-color: rgb(187, 208, 239);
+    border: 3px solid rgb(127, 159, 186);
+    text-align: center;
+    padding: 10px;
+    padding-left: 35px;
+    margin: 10px;
+    margin-top: 25px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    position: relative;
+}
+.brokers-block{
+    padding: 0px;
+}
+-review{
+    padding: 8px;
+    font-size: 14px;
+}
+-review .logo{
+    padding: 0px;
+}
+img.testedBroker, img.notTestedBroker{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 3px;
+    color: white;
+    font-weight: 800;
+}
+.hidden-broker{
+    cursor:pointer;
+    height: 0px;
+    transition: 0.3s;
+    display: none;
+}
+.results-page-Action-buttons{
+    display: flex;
+    flex-direction: column;
+}
+.items {
+    padding: 30px;
+    transition: 0.3s;
+}
+.items h3 {
+    text-align: left;
+    font-size: 18px;
+}
+.items p {
+    text-align: justify;
+}
+.items:hover{
+    box-shadow: 3px 2px 19px 0px rgb(207, 200, 200);
+}
+.left-broker {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    background: #8bd6d2;
+}
+.left-broker-green
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    background: #6cac58;
+}
+.bg-left-broker-green
+{
+    width: 115%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 99%;
+}
+.left-broker-yellow
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    background: #ffd200;
+}
+.bg-left-broker-yellow
+{
+    width: 115%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 99%;
+}
+.left-broker-gray
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    background: #666666;
+}
+.bg-left-broker-gray
+{
+    width: 115%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 99%;
+}
+.right-broker {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+.bg-left-broker {
+    width: 115%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+#broker-counter tr th,
+#broker-counter tr td {
+    width: 12.5%;
+}
+
+#broker-online-buy tr th,
+#broker-online-buy tr td,
+#brokers tr th,
+#brokers tr td {
+    width: 11%;
+}
+
+#broker-online-buy tr th:first-child,
+#broker-online-buy tr td:first-child,
+#brokers tr th:first-child,
+#brokers tr td:first-child {
+    width: 25%;
+}
+
+#broker-online-buy tr th:last-child,
+#broker-online-buy tr td:last-child,
+#brokers tr th:last-child,
+#brokers tr td:last-child {
+    width: 20%;
+}
+
+#brokers tr th:last-child .link{
+    line-height: 20px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.additional-currencies-popup{
+    display: none;
+    position: absolute;
+    top: 16px;
+    left: -3px;
+    height:auto;
+    min-width: 6.2em;
+    width:auto;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    padding:2px 5px;
+    text-align: left;
+    cursor: auto;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    z-index:1;
+    font-weight:700;
+}
+.additional-currencies-popup p{
+    font-size: 14px;
+}
+.additional-currencies-popup.zero-price-block{
+    min-width:10em;
+    left:-52px;
+    text-align: center;
+}
+tr:last-of-type .additional-currencies-popup{
+    top:initial;
+    bottom:16px;
+}
+tr:only-of-type .additional-currencies-popup{
+    top: initial;
+    bottom: -28px;
+}
+.currency-sign.can-hover:hover .additional-currencies-popup,.additional-currencies-popup:hover{
+    display: block;
+}
+.currency-sign.can-hover{
+    cursor: pointer;
+    color: rgb(96, 165, 232);
+    position: relative;
+    min-width: 15px;
+    display: inline-block;
+}
+.currency-sign.can-hover:after{
+    content: '▼';
+    position: absolute;
+    left:-12px;
+}
+.additional-currencies-popup p{
+    margin:2px 0;
+}
+.currency-in{
+    min-width: 12px;
+    display: inline-block;
+}
+.currency-UAH, .currency-RUB{
+    font-weight: 400;
+}
+#lotto-info{
+    margin-top: -25px;
+}
+
+/* End broker page */
+/* Popover */
+.popover{
+    width: auto;
+}
+.compare-broker-table .popover.fade.bottom.in{
+    max-width:600px;
+}
+.popover.left {
+    margin-left: 5px;
+}
+.popover-content {
+    color: gray;
+}
+.popover-toggle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.main-page-brokers-logo .popover.right{
+    min-width: 400px;
+}
+/* End popover */
+/* Lottery review page */
+
+span.main-lottery-number,
+span.secondary-lottery-number,
+span.bonus-lottery-number {
+    text-align: center;
+    padding: 8px;
+    color: aliceblue;
+    float: left;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+span.main-lottery-number {
+    background: rgb(113, 166, 244);
+}
+span.bonus-lottery-number {
+    background: rgb(60, 173, 119);
+}
+span.secondary-lottery-number {
+    background: rgb(172, 102, 229);
+}
+.inline-numbers{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+}
+
+.inline-numbers ul{
+    list-style-type: none;
+}
+select#selected_lottery {
+    width: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+.lotto-page-lotto-options{
+    color: #116DD6;
+}
+
+.lottery-page-collapser thead{
+    display: none;
+}
+.lotto-info-with-last-results{
+    margin-bottom: 10px;
+}
+.no-brokers-button{
+    width:auto;
+    display: inline-block;
+}
+.no-brokers-lottery{
+    text-align: center;
+    border:1px solid #ddd;
+    background-color: #E8F1FC;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.broker-image{
+    max-width: 150px;
+}
+.lottery-info-block{
+    margin-top: 10px;
+}
+.long-info-button.lottery-page-hot-link{
+    margin: 10px 0 0;
+}
+/* End Lottery review page */
+/* Catalogs (news\articles) */
+
+.news-catalog-articles{
+    margin: 10px;
+    border: 1px solid #E4E4E4;
+}
+.news-catalog-articles .picture{
+    width: 100%;
+}
+.info-table{
+    width: 100%;
+}
+.info-table th, .info-table td{
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* End Catalogs (news\articles) */
+/* Buy online pages */
+
+.buy-online-lotto-brokers-top.general-buy-online div:first-of-type{
+    margin-left: 15px;
+    width:calc(50% - 15px);
+}
+.buy-online-lotto-brokers-top.general-buy-online div:last-of-type{
+    margin-right: 15px;
+    width:calc(50% - 15px);
+}
+.buy-online-steps-circles{
+    color: #3D74B8;
+    font-size: 25px;
+    margin: 30px 0;
+}
+.buy-online-steps-circles .number-step {
+    display: block;
+    border: 2px solid #346EB5;
+    border-radius: 50%;
+    vertical-align: middle;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    padding-top: 3px;
+}
+.buy-online-steps-circles .active{
+    color: #74179A;
+}
+.buy-online-steps-circles .active .number-step{
+    border: 2px solid #74179A;
+}
+
+.buy-online-lotto-brokers-top div{
+    position: absolute;
+    height: 100%;
+    border: 1px solid green;
+    color: green;
+}
+.buy-online-lotto-brokers-top div img{
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.buy-online-lotto-brokers-top div:nth-child(2){
+    right: 0px;
+}
+.buy-online-lotto-brokers-top .active{
+    border: 1px solid #468DDF;
+    background: #468DDF;
+    color: white;
+}
+.buy-online-lotto-brokers-top{
+    padding: 0px;
+    position: relative;
+    height: 60px;
+}
+#online-buy tr td{
+    width: 33.3333333333%;
+}
+
+/* End Buy online pages */
+/* Compare brokers page */
+
+.compare-brokers-items{
+    display: inline-block;
+    float: none;
+    margin: 5px;
+}
+.compare-broker-table td{
+    vertical-align: top;
+}
+.compare-broker-table tbody tr td:nth-child(2){
+    border-right: 1px solid #DAD7D7;
+}
+.compare-broker-table tbody tr td:nth-child(1){
+    color: #60A5E8;
+}
+.compare-broker-table select{
+    width: 100%;
+}
+.compare-table .info-table th > center{
+    font-size: 15px;
+}
+
+/* End Compare brokers page */
+/* General UI items */
+.right-banner-images{
+    width: 100%;
+    max-width: 300px;
+    margin-top:30px;
+}
+.lotto-page-timer{
+    font-size: 30px;
+}
+#toTop {
+    position: fixed;
+    bottom: 35px;
+    right: 40px;
+    cursor: pointer;
+    display: block;
+    background-color: #267571;
+    font-size: 34px;
+    color: #FFFFFF;
+    width: 50px;
+    height: 50px;
+    font-family: 'Glyphicons Halflings';
+    border-radius: 25px;
+    opacity: 0.7;
+    padding-left: 7px;
+    padding-top: 8px;
+    top: inherit;
+}
+.close { /* modal close button */
+    font-size: 32px;
+    color: #FFFFFF;
+}
+.modal-body {
+    position: relative;
+    padding: 30px;
+}
+#simPopUp .modal-body {
+    position: relative;
+    padding: 30px;
+}
+
+#simPopUp .modal-dialog{
+    width: 742px !important;
+}
+.translation-id{
+    color:#419641;
+}
+.translation-text{
+    color: #d9534f;
+}
+.no-lotteries-after-x-text{
+    margin-left: 10px;
+}
+#popUp button.close{
+    color: red;
+    opacity: 1;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+
+/* End General UI items */
+/* ContactUs page */
+
+#contactForm #name, #contactForm #email, #contactForm #phone, #contactForm #message{
+    transition: .7s;
+}
+
+/* End ContactUs page */
+/* Tools pages */
+
+.tools-random-numbers{
+    background: #E3F1FF;
+    padding: 15px;
+}
+.tools-random-numbers select, .tools-random-numbers input{
+    border: 1px solid #60A5E8;
+    color: #60A5E8;
+}
+.tools-random-numbers input:placeholder{
+    color: #60A5E8;
+}
+.choose-numbers-control-panel {
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.numbers-for-user {
+    height: 50px;
+    padding-left: 20px;
+}
+.hot-cold-container{
+    border: 1px solid #dedede;
+    border-top: 0;
+    background-color: #e9f2fc;
+    width:100%;
+    border-radius: 5px 5px 0 0;
+    margin:20px auto;
+    padding-bottom: 20px;
+}
+.hidden-radio{
+    display: none;
+}
+.fallen-button{
+    display: block;
+    float: left;
+    width:50%;
+    background-color: #60a6e9;
+    color: #fff;
+    height:48px;
+    padding: 5px 0 0;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+.fallen-button h2, .fallen-button h3{
+    font-size: 24px;
+    text-align: center;
+    margin:0;
+    padding:5px 0 0;
+    color: #fff;
+}
+.fallen-button.active{
+    background-color: #247ac9;
+}
+.fallen-button.left-fallen-button{
+    border-radius: 5px 0 0 0;
+    width:calc(50% - 1px);
+    border-right:1px solid #fff;
+}
+.fallen-button:hover{
+    background-color: #298ce6;
+}
+.fallen-button.active:hover{
+    background-color: #247ed0;
+}
+.fallen-button.right-fallen-button{
+    border-radius: 0 5px 0 0;
+}
+.round-form-element option{
+    background-color: #ffffff;
+    color: #6f6f6f;
+    padding:2px 0;
+}
+.round-form-element option:hover,
+.dropdown-menu .dropdown-blue a:hover{
+    background-color: #32b3ea;
+    color: #fff;
+}
+select.round-form-element {
+    appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+}
+.dropdown-toggle.round-form-element{
+    padding:2px 40px 0 15px;
+}
+.lotteries-container,
+.years-container,
+.months-container{
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.select-caret-container{
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.lotteries-container .caret,
+.years-container .caret,
+.months-container .caret,
+.select-caret-container .caret{
+    border-top-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    cursor: pointer;
+    pointer-events: none;
+}
+.lotteries-container .round-form-element,
+.years-container .round-form-element,
+.months-container .round-form-element{
+    width:100%;
+    cursor: pointer;
+}
+.lotteries-container{
+    margin-left: 20px;
+    width:195px;
+}
+.years-container{
+    width:170px;
+}
+.months-container{
+    width:170px;
+}
+.sort-type-container{
+    margin-bottom: 20px;
+}
+.hot-numbers-container{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.inline-numbers-hot > *{
+    display: inline-block;
+    text-align: center;
+}
+.hot-number-ball{
+    height: 69px;
+    width: 69px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    line-height: 69px;
+    font-size:28px;
+    font-weight: 700;
+    display: block;
+    color: #ffffff;
+    margin:0 auto 15px;
+}
+.hot-number{
+    height:200px;
+    width:19%;
+    vertical-align: top;
+}
+.hot-number *{
+    display: block;
+    text-align: center;
+}
+.hot-main-number{
+    background-image: url(/public/img/blue-ball.png);
+}
+.hot-secondary-number{
+    background-image: url(/public/img/purple-ball.png);
+}
+.hot-bonus-number{
+    background-image: url(/public/img/green-ball.png);
+}
+.hot-numbers-container h3{
+    margin-left: 50px;
+}
+
+/* End tools pages */
+/* Lotto Statistics page */
+
+
+.lotto-numbers-date{
+    margin-top: 10px;
+    /*margin-bottom: -25px;*/
+    color: #60A5E8;
+    font-size: 24px;
+    margin-left:5px;
+}
+/*#lotto-info span.main-lottery-number, #lotto-info span.secondary-lottery-number, #lotto-info span.bonus-lottery-number{*/
+    /*margin:25px 0 10px 5px;*/
+/*}*/
+h2 .last-result-date{
+    font-size: 33px;
+}
+.lottery-head{
+    min-height: 220px;
+    padding:105px 0 0;
+    text-align: center;
+    background: no-repeat center;
+    background-size: contain;
+    color: #fff;
+}
+.lottery-logo-container{
+    background-image: url(/public/img/lottery-head-images/lottery-head-logo.png);
+}
+.lottery-jackpot-container{
+    background-image: url(/public/img/lottery-head-images/lottery-head-jackpot.png);
+}
+.lottery-next-draw-container{
+    background-image: url(/public/img/lottery-head-images/lottery-head-next-draw.png);
+}
+
+/*.lottery-jackpot-container .jackpot-title-in-head{*/
+    /*height: 34px;*/
+/*}*/
+/*.lottery-jackpot-container .lottery-head-money-container{*/
+    /*height: 56px;*/
+    /*line-height: 56px;*/
+/*}*/
+.lottery-jackpot-container .lottery-head-money-container .is-empty-jackpot{
+    /*max-height: 56px;*/
+    /*line-height: 28px;*/
+    /*display: inline-block;*/
+    font-size: 25px;
+}
+
+.head-container{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.head-title{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.lottery-head .timer{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.lottery-head .money .money-index{
+    font-size: 36px;
+}
+.lottery-head .money {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.lottery-logo{
+    max-width:100%;
+    margin-top: 5px;
+}
+.lottery-head{
+    margin-top: 20px;
+}
+.lottery-head-body{
+    border-bottom: 2px solid #4399AC;
+    padding-bottom: 30px;
+}
+#numbersArchive{
+    margin-top: 20px;
+}
+/*#numbersArchive .inline-numbers{*/
+    /*padding:40px 0 40px 5vw;*/
+/*}*/
+/*#numbersArchive .up-down-3-results .inline-numbers{*/
+    /*padding:40px 0 40px;*/
+/*}*/
+.up-down-3-results{
+    padding:20px 2.5vw 0;
+}
+.up-down-3-results .h3{
+    height: 52px;
+    overflow: hidden;
+}
+.round-form-element{
+    height: 30px;
+    border: 0;
+    border-radius: 15px;
+    background-color: #32b3ea;
+    padding:2px 30px 0 15px;
+    color: #fff;
+}
+
+.round-form-element:focus{
+    outline:0;
+}
+.round-form-element::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #f3f3f3;
+}
+.round-form-element::-moz-placeholder { /* Firefox 19+ */
+    color: #f3f3f3;
+}
+.round-form-element:-ms-input-placeholder { /* IE 10+ */
+    color: #f3f3f3;
+}
+.round-form-element:-moz-placeholder { /* Firefox 18- */
+    color: #f3f3f3;
+}
+.statistics-head{
+    padding-bottom:10px;
+}
+.statistics-filter{
+    float: right;
+    padding:10px 0 20px;
+}
+.bootstrap-select:not([class*="span"]):not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+    width: 100%;
+}
+.statistics-title{
+    font-size:36px;
+    float: left;
+    width:100%;
+}
+.links-block{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.long-info-button{
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+    display: block;
+    font-size: 20px;
+    height:48px;
+    width:80%;
+    background-color: #ed4d28;
+    padding-top: 8px;
+    border-radius: 6px;
+    border: 0;
+    color: #fff;
+    margin:0 auto;
+    -webkit-box-shadow: 0px 4px 0px 0px #c20d00;
+    -moz-box-shadow: 0px 4px 0px 0px #c20d00;
+    box-shadow: 0px 4px 0px 0px #c20d00;
+    cursor: pointer;
+}
+.long-info-button:hover,
+.long-info-button:focus{
+    background-color: #f29071;
+    color: #fff;
+    -webkit-box-shadow: 0px 4px 0px 0px #d46b4e;
+    -moz-box-shadow: 0px 4px 0px 0px #d46b4e;
+    box-shadow: 0px 4px 0px 0px #d46b4e;
+}
+
+.stats-link{
+    font-size: 24px;
+    margin-right: 20px;
+}
+.stats-pages{
+    margin-bottom: 20px;
+}
+.hot-numbers-link .long-info-button{
+    width: 290px;
+}
+#afterNavigation{
+    margin:15px 2.5vw 20px;
+}
+#afterNavigation .long-info-button{
+    padding: 12px 14px 0;
+    width: 90%;
+    float: left;
+    background-color: #16bd87;
+    -webkit-box-shadow: 0px 4px 0px 0px #00682e;
+    -moz-box-shadow: 0px 4px 0px 0px #00682e;
+    box-shadow: 0px 4px 0px 0px #00682e;
+    font-size: 16px;
+}
+#afterNavigation .long-info-button:hover,
+#afterNavigation .long-info-button:focus{
+    background-color: #12976B;
+    color: #fff;
+    -webkit-box-shadow: 0px 4px 0px 0px #00441E;
+    -moz-box-shadow: 0px 4px 0px 0px #00441E;
+    box-shadow: 0px 4px 0px 0px #00441E;
+}
+#afterNavigation .long-info-button .long-info-text{
+    text-align: center;
+    display: inline-block;
+    width:100%;
+    height:24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.lottery-head .timer.timer-underway{
+    font-size: 25px;
+    line-height: 20px;
+}
+.dropdown-menu{
+    overflow-y: auto;
+    max-height:300px;
+}
+.dropdown-header{
+    font-size: 14px;
+}
+.other-months-block{
+    margin-bottom: 20px;
+}
+.other-months-block h4{
+    margin-bottom: 20px;
+}
+.monthly-list{
+    margin-top: 20px;
+}
+.monthly-list li{
+    float: left;
+    width:25%;
+    list-style: none;
+}
+.monthly-list li a{
+    font-size: 14px;
+    color: #60A5E8;
+}
+.monthly-list li:nth-of-type(5){
+    clear: left;
+}
+.divider{
+    width:100%;
+    height:1px;
+    background-color: #eae9e9;
+}
+
+#statisticsHead .bootstrap-select.btn-group .dropdown-menu li a.opt{
+    padding-left: 20px;
+}
+#statisticsHead .dropdown-menu .divider{
+    height: 2px;
+}
+.link-in-compare-table{
+    display: inline-block; width: 49%; margin-right: 1%;
+}
+/* End Lotto Statistics page */
+/* Result page */
+.results-table .new-button-lotosend,
+.results-table .new-button-thelotter{
+    margin-top: 5px;
+}
+.results-table .button-for-mobile_2{
+    padding: 7px 20px;
+}
+.compare-agents-site-button{
+    display: inline-block;
+    width: 49%;
+    margin-right: 1%;
+}
+.country-title{
+    display: none;
+}
+/* End Results page */
+#sendContactFormFromCU{
+    width: 100%;
+}
+/*.collapsible-menu-title hidden ? somewhere?*/
+.alt-popup{
+    display: none;
+}
+.expandable-mobile-container .collapsible-mobile-link{
+    cursor: default;
+}
+.widget-block{
+    margin-top: 20px;
+    max-width:300px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.fixed-table-container thead th .th-inner{
+    padding: 0;
+}

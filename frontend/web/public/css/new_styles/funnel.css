@@ -1,0 +1,483 @@
+
+
+/* styles for funnel */
+/* main buttons */
+.green-button
+{
+    background-color: #5cc615;
+    border: 1px solid #35a80d;
+}
+.red-button
+{
+    background-color: #ee2b2b;
+    border: 1px solid #ba0e0e;
+}
+.button-inner-text
+{
+    display: inline-block;
+    height: 100%;
+}
+.button-inner-text span
+{
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.right-button-arrow
+{
+    width: 8px;
+    margin-left: 15px;
+    background-image: url('/public/funnel_images/button_arrow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.green-button,
+.red-button
+{
+    display: block;
+    margin-bottom: 35px;
+    width: 280px;
+    height: 50px;
+    border-radius: 25px/25px;
+    font-family: "OpenSansRegular";
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: 2px 4px 65px -1px rgba(255,255,255,.5);
+    -moz-box-shadow: 2px 4px 65px -1px rgba(255,255,255,.5);
+    box-shadow: 2px 4px 65px -1px rgba(255,255,255,.5);
+}
+.green-button:hover,
+.red-button:hover
+{
+    cursor: pointer;
+}
+/* end of main buttons */
+/* circles for steps checked and unchecked */
+.text-before-steps
+{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "OpenSansRegular";
+    font-size: 18px;
+    color: #fff;
+    text-align: left;
+    margin-right: 20px;
+}
+.step-circles
+{
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.selected-step
+{
+    width: 22px;
+    height: 22px;
+    border: 2px solid #3480c3;
+    background-color: #e5f0fc;
+}
+.step-circles:last-child
+{
+    margin-right: 0px;
+}
+/* end of circles steppes */
+
+/* display circles for last steps */
+.winning-numbers
+{
+    display: table;
+    float: left;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: #60a5e8;
+    font-family: "Myriad Pro Regular";
+    font-size: 18px;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 8px;
+    background-color: #fff;
+    border: 2px solid #2b87e1;
+}
+.winning-numbers span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.winning-numbers:last-child
+{
+    margin-right: 0px;
+}
+/* end of circles for last steps */
+
+/* Step 3 choose buttons */
+.choose-buttons-funel
+{
+    position: relative;
+    display: table;
+    width: 280px;
+    margin-bottom: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 36px;
+    text-align: right;
+    color: #fff;
+    font-size: 18px;
+    font-family: Myriad Pro;
+    border-radius: 2px/2px;
+}
+.choose-buttons-funel:last-child
+{
+    margin-bottom: 0px;
+}
+.choose-buttons-checked:after
+{
+    content: '';
+    position: absolute;
+    right: -32px;
+    width: 36px;
+    height: 36px;
+    background-image: url('/public/funnel_images/green-checked-button.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.choose-buttons-funel span
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+.funel-text
+{
+    font-family: "Myriad Pro Regular";
+    font-size: 18px;
+    text-align: left;
+    padding-left: 15px;
+}
+.left-logo
+{
+    width: 59px;
+    text-align: center;
+}
+.left-logo.lotto-crown
+{
+    border-right: 1px solid #ffb2a5;
+}
+.left-logo.lotto-target
+{
+    border-right: 1px solid #ffe7a5;
+}
+.left-logo.lotto-machine
+{
+    border-right: 1px solid #a5f3ff;
+}
+.left-logo>span
+{
+    display: inline-block;
+    width: 32px;
+    height: 36px;
+}
+.lotto-machine>span
+{
+    background-image: url('/public/funnel_images/lotto-machine-first-option.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+}
+.lotto-target>span
+{
+    background-image: url('/public/funnel_images/target-second-option.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.lotto-crown>span
+{
+    background-image: url('/public/funnel_images/crown-third-option.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.blue-fanel
+{
+    background-color: #10cde9;
+}
+.orange-fanel
+{
+    background-color: #e9ae10;
+}
+.red-fanel
+{
+    background-color: #e94810;
+}
+/* end of choose buttons */
+
+/* Step 2 select */
+#funel-select::-ms-expand {
+    display: none;
+}
+#funel-select
+{
+    width: 100%;
+    outline : none;
+    overflow : hidden;
+    text-indent : 0.01px;
+    text-overflow : '';
+    display: inline-block;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid #23669b;
+    font-family: "Myriad Pro Regular";
+    font-size: 20px;
+    background-color: #fff;
+    color: #308cce;
+    border-radius: 3px/3px;
+    margin: 0;
+    margin-top: 150px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-image: url('/public/funnel_images/arrow-down-funel.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 12px 7px;
+}
+/* end of select*/
+
+/* Step 1 input */
+#funel-birthday
+{
+    width: 80%;
+    height: 50px;
+    border: 1px solid #23669b;
+    border-radius: 3px/3px;
+    background-color: #fff;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Myriad Pro Regular";
+    color: #308cce;
+    font-size: 20px;
+}
+#funel-birthday::-webkit-input-placeholder {font-family: "Myriad Pro Regular"; color: #308cce; font-size: 20px;} /* Chrome/Opera/Safari */
+#funel-birthday::-moz-placeholder {font-family: "Myriad Pro Regular";  color: #308cce; font-size: 20px;}  /* Firefox 19+ */
+#funel-birthday:-ms-input-placeholder {font-family: "Myriad Pro Regular";  color: #308cce; font-size: 20px;} /* IE 10+ */
+#funel-birthday:-moz-placeholder {font-family: "Myriad Pro Regular";  color: #308cce; font-size: 20px;}/* Firefox 18- */
+/* end of step 1*/
+
+/* text and headers */
+.funel-main-header
+{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-family: "Myriad Pro Bold";
+    line-height: 1em;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+.funel-sub-header
+{
+    margin-top: 10px;
+    line-height: 1.1em;
+    font-family: "Myriad Pro Regular";
+    font-size: 28px;
+    color: #ffffff;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+/* end of text and headers */
+
+/* funnel steps background */
+.stepp
+{
+    display: none;
+    height: 570px;
+}
+.step1
+{
+    background-image: url('/public/funnel_images/en_step_1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.step2
+{
+    background-image: url('/public/funnel_images/en_step_2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.step3
+{
+    background-image: url('/public/funnel_images/en_step_3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.step4
+{
+    background-image: url('/public/funnel_images/en_step_4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.selected-funel-step
+{
+    display: block;
+}
+.fanel-group
+{
+    float: right;
+    display: block;
+    width: 54%;
+    padding-left: 6.8%;
+    margin-right: 0;
+    margin-top: 80px;
+}
+.fanel-group-top
+{
+    float: right;
+    display: block;
+    width: 54%;
+    padding-left: 6.8%;
+    margin-right: 10px;
+    margin-top: 110px;
+}
+.step2 .fanel-group-top,
+.step3 .fanel-group-top,
+.step3 .fanel-group,
+.step4 .fanel-group
+{
+    padding-left: 5.8%;
+}
+.step2 .fanel-group
+{
+    padding-left: 5.8%;
+    margin-top: 50px;
+}
+.step3 .fanel-group-top
+{
+    margin-top: 70px;
+}
+.step3 .fanel-group
+{
+    margin-top: 35px;
+}
+.step3 .funel-main-header
+{
+    margin-bottom: 20px;
+}
+.step4 .fanel-group-top
+{
+    width: 100%;
+    padding-left: 0%;
+    margin-top: 310px;
+}
+.step4 .fanel-group
+{
+    padding-left: 5.5%;
+    margin-top: 70px;
+}
+.bonus-fan
+{
+    background: rgb(60,173,119);
+    color: #fff;
+    border: none;
+}
+.sec-fan
+{
+    background: rgb(172,102,229);
+    color: #fff;
+    border: none;
+}
+.choose-buttons-funel:hover
+{
+    cursor: pointer;
+}
+.place-for-numbers
+{
+    float: right;
+    margin-right: 15px;
+}
+.modal-link
+{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px/25px;
+}
+.step1 .fanel-group-top.fanel-ru,
+.step1 .fanel-group-top.fanel-fr
+{
+    margin-top: 70px;
+}
+.step1 .fanel-group-top.fanel-ru,
+.step1 .fanel-group.fanel-ru
+{
+    width: 55%;
+    padding-left: 5.8%;
+}
+.step3 .fanel-group-top.fanel-ru,
+.step3 .fanel-group-top.fanel-de,
+.step3 .fanel-group-top.fanel-fr,
+.step3 .fanel-group-top.fanel-it,
+.step3 .fanel-group-top.fanel-es
+{
+    margin-top: 30px;
+}
+.step3 .fanel-group-top.fanel-fr .choose-buttons-checked:after,
+.step3 .fanel-group-top.fanel-ru .choose-buttons-checked:after,
+.step3 .fanel-group-top.fanel-de .choose-buttons-checked:after,
+{
+    right: -24px;
+}
+.step3 .fanel-group-top.fanel-it .choose-buttons-checked:after,
+.step3 .fanel-group-top.fanel-es .choose-buttons-checked:after
+{
+    right: -30px;
+}
+.step3 .fanel-de .choose-buttons-funel,
+.step3 .fanel-it .choose-buttons-funel
+{
+    width: 330px;
+}
+.step3 .fanel-fr .choose-buttons-funel,
+.step3 .fanel-ru .choose-buttons-funel
+{
+    width: 315px;
+}
+.step3 .fanel-es .choose-buttons-funel,
+.step3 .fanel-it .choose-buttons-funel
+{
+    width: 340px;
+}
+.funel-text.fanel-es,
+.funel-text.fanel-it
+{
+    padding-left: 10px;
+    font-size: 17px;
+}
+.funel-main-header.fanel-fr
+{
+    padding-right: 5%;
+}
+#funel-select.fanel-ru,
+#funel-select.fanel-es,
+#funel-select.fanel-it
+{
+    margin-top: 170px;
+}
+/* end of funnel steps background */

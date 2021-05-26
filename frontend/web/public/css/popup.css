@@ -1,0 +1,155 @@
+.popup-body{
+    background: url(/public/img/popup_surprised_girl/popup-background.png) no-repeat;
+    width: 742px;
+    height: 570px;
+    padding:7px 0 0;
+}
+.popup-logo{
+    background: url(/public/img/popup_surprised_girl/popup-logo-background.png) no-repeat;
+    width: 322px;
+    height: 86px;
+    text-align: center;
+    margin-left: 102px;
+}
+.popup-logo-image{
+    height: auto;
+    width:auto;
+    max-height: 90%;
+    text-align:center;
+    margin:10px auto 0;
+}
+.popup-body .popup-heading{
+    width: 442px;
+    height: 105px;
+    color: #e62894;
+    font-family: "Myriad Pro Bold",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-align: center;
+    margin:10px 0 0 36px;
+    line-height: 32px;
+    display: block;
+}
+.popup-body .popup-sub-heading{
+    width: 325px;
+    height: 44px;
+    color: #e72995;
+    font-family: "Helvetica Neue", "Helvetica",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 0 2px 96px;
+    display: block;
+}
+.popup-jackpot-container{
+    background: url(/public/img/popup_surprised_girl/popup-jackpot-background.png) no-repeat;
+    width: 502px;
+    height: 138px;
+    margin-left: 0;
+}
+.popup-jackpot-text{
+    height: 46px;
+    padding-top: 8px;
+    color: #13567e;
+    font-family: "Open Sans",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    text-transform: uppercase;
+    margin-right: 35px;
+    text-align: center;
+    overflow: hidden;
+}
+.popup-jackpot-price{
+    width: auto;
+    height: 65px;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.popup-button{
+    color: #ffffff;
+    display: block;
+    font-family: "Helvetica Neue", "Helvetica",sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 72px;
+    text-transform: uppercase;
+    box-shadow: inset 0 -5px 0 #c01313;
+    border-radius: 38px;
+    background-color: #eb250a;
+    text-align: center;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+.popup-button:hover{
+    background-color: #EB601A;
+    box-shadow: inset 0 -5px 0 #C02A18;
+}
+.popup-button-container{
+    margin-left: 52px;
+    margin-top: 7px;
+    width: 410px;
+    height: 81px;
+    padding: 4px;
+    border-radius: 38px;
+    overflow: hidden;
+    background-color: rgba(255,255,255,0.3);
+}
+.timer-container{
+    text-align: left;
+    color: #740164;
+    margin-left: 46px;
+    margin-top: 5px;
+}
+.timer-container .double-draw-background{
+    background: url(/public/img/popup_surprised_girl/double-draw-popup.png) no-repeat center;
+    width: 147px;
+    height: 71px;
+    float: left;
+    font-family: "Myriad Pro Bold",sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 22px;
+    padding-top: 16px;
+    word-spacing: 147px;
+}
+.timer-container .draw-background{
+    background: url(/public/img/popup_surprised_girl/draw-popup.png) no-repeat center;
+    width: 77px;
+    height: 71px;
+    float: left;
+    text-align: center;
+    margin-left:-12px;
+}
+.timer-container .draw-background .popup-draw-text{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: -14px;
+}
+.timer-container .draw-background .popup-draw-value{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 3px;
+}
+.popup-draw-text,
+.popup-draw-value{
+    display: block;
+}

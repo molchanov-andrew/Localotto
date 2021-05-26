@@ -1,0 +1,504 @@
+@font-face {
+    font-family: 'Ebrima';
+    src: url('../fonts/Ebrima/Ebrima-Bold.woff2') format('woff2'),
+    url('../fonts/Ebrima/Ebrima-Bold.woff') format('woff'),
+    url('../fonts/Ebrima/Ebrima-Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+.bottom-top-jackpot-block{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    color: #014d9a;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    z-index: 2;
+}
+.block-background{
+    background: url(/public/img/bottom-jackpot/bottom-jackpot-background-left.png) no-repeat left center, url(/public/img/bottom-jackpot/bottom-jackpot-background-right.png) no-repeat right center;
+    background-color: #fff;
+    background-size: auto 100%, auto 100%;
+    height: 198px;
+}
+.gradient-border{
+    background-image: linear-gradient(to right,#007bd3 0%,#4fd9fa 50%,#007bd3 100%);
+    padding: 1px;
+}
+.bottom-top-jackpot-block:before,
+.bottom-top-jackpot-block:after{
+    position: absolute;
+}
+.bottom-top-jackpot-container{
+    margin: 0 auto;
+    width: 1430px;
+}
+.bottom-top-jackpot-block p{
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+.bottom-top-jackpot-block .text-1{
+    padding-top: 10px;
+}
+.bottom-top-jackpot-block .text-2{
+    padding-top: 18px;
+}
+.double-jackpot-title{
+    color: #004294;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.double-jackpot-title span{
+    color: #ee3d33;
+    font-family: "Ebrima",sans-serif;
+    font-weight: 700;
+}
+.lottery-block{
+    width: 430px;
+    float: left;
+}
+.lottery-block, .jackpot-block{
+    margin-top: -15px;
+}
+.timer-with-button{
+    width: 240px;
+    float: left;
+}
+.timer-title{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+}
+.timer-number{
+    display: inline-block;
+    font-weight: 400;
+    width: 70px;
+    height: 65px;
+    color: #000000;
+    font-family: "Myriad Pro",sans-serif;
+}
+.timer-container .draw-background{
+    background: url(/public/img/bottom-jackpot/timer-background.png) no-repeat;
+    width: 70px;
+    height: 65px;
+    float: left;
+    text-align: center;
+    margin-left: -15px;
+    color:#000;
+}
+.timer-container .draw-background:first-of-type{
+    margin-left: 0;
+}
+.timer-container .draw-background .popup-draw-text{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+}
+.timer-container .draw-background .popup-draw-value{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 3px;
+    height: 36px;
+}
+.popup-draw-text,
+.popup-draw-value{
+    display: block;
+}
+.lottery-button{
+    display: block;
+    width: 190px;
+    height: 50px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 23px;
+    margin: 8px auto 0;
+    overflow: hidden;
+}
+.megamillions-block .lottery-button{
+    background-image: linear-gradient(to right, #f3a12c 0%, #ee3b33 100%);
+    box-shadow: 0 2px 0 1px #b0221a;
+}
+.powerball-block .lottery-button{
+    background-image: linear-gradient(to right, #157ce8 0%, #004192 100%);
+    box-shadow: 0 2px 0 1px #00356f;
+}
+.powerball-block .lottery-button:hover{
+    background-image: linear-gradient(to right, #158dff 0%, #0053d4 100%);
+    color: #fff;
+}
+.megamillions-block .lottery-button:hover{
+    background-image: linear-gradient(to right, #ffb023 0%, rgba(255, 61, 41, 0.82) 100%);
+    color: #fff;
+}
+.logo-block{
+    background: url(/public/img/bottom-jackpot/lotttery-ball.png) no-repeat;
+    width: 133px;
+    height: 140px;
+    text-align: center;
+    float: left;
+}
+.megamillions-block .logo-block{
+    margin-left: 25px;
+}
+.powerball-block .logo-block{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.logo-block img{
+    text-align: center;
+    padding-top: 45px;
+    max-width: 130px;
+}
+.jackpot-block{
+    background: url(/public/img/bottom-jackpot/price-background.png) center 45px no-repeat;
+    float: left;
+    width: calc(100% - 880px);
+}
+.jackpot-price.money{
+    margin-top: -25px;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(1, 8, 96, 0.56);
+    color: #ffffff;
+    font-family: "Ebrima",sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    min-height: 80px;
+}
+
+/* + Right jackpots */
+
+.right-jackpots-block{
+    margin-top: 20px;
+    width: 300px;
+    background-color: #73a7e5;
+}
+.right-jackpots-title{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: #468ddf;
+    line-height: 30px;
+    padding: 5px 0;
+}
+.right-jackpots-block .right-result{
+    margin: 0 15px;
+    border-bottom: 1px solid #ffffff;
+    padding: 15px 10px;
+}
+.right-jackpots-block .right-result:last-of-type{
+    border-bottom: none;
+}
+.right-jackpots-block .timer-with-button .draw-background{
+    color: #1e418f;
+}
+.right-jackpots-block .logo-block{
+    height: 75px;
+    width: auto;
+    background: none;
+    margin-left: 0;
+    /*background-size: contain;    */
+}
+.right-jackpots-block .logo-block img{
+    text-align: center;
+    padding-top: 25px;
+    max-width: 100px;
+}
+.right-jackpots-block .lottery-button{
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #f6aa17 0%, #f6aa17 100%);
+    width: 134px;
+    height: 31px;
+    box-shadow: 0 2px 0 1px rgba(246, 75, 23, 0.5);
+    text-align: center;
+    line-height: 31px;
+    color: #fff;
+    text-shadow:none;
+    font-size: 15px;
+    text-transform: none;
+}
+.right-jackpots-block .lottery-button:hover{
+    background-image: linear-gradient(to right, #f6c517 0%, #f6c011 100%);
+}
+.right-jackpots-block .lottery-jackpot{
+    color: #08216d;
+    font-size: 12pt;
+    font-weight: 700;
+    text-align: left;
+}
+.right-jackpots-block .logo-with-name{
+    width: 110px;
+    float: left;
+}
+.right-jackpots-block .timer-with-button{
+    width: 140px;
+}
+.right-jackpots-block .timer-container .draw-background{
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    margin-left: -7px;
+}
+.right-jackpots-block .timer-container .draw-background:first-of-type{
+    margin-left: 0;
+}
+.right-jackpots-block .timer-title{
+    color: #1e418f;
+    text-align: center;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.right-jackpots-block .timer-container .draw-background .popup-draw-text{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 7px;
+    font-weight: 700;
+    color: #73a7e5;
+}
+.right-jackpots-block .timer-container .draw-background .popup-draw-value{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 21px;
+    line-height: 24px;
+}
+
+
+/* + Single jackpot */
+
+.single-jackpot-block .bottom-top-jackpot-container{
+    width: 90%;
+}
+.single-jackpot-block .logo-block{
+    background: url(/public/img/bottom-jackpot/single-lottery-background.png) center no-repeat;
+    width: 391px;
+    height: 132px;
+}
+.single-jackpot-block .logo-block img{
+    max-width: 220px;
+    height: auto;
+    padding-top: 25px;
+}
+.single-jackpot-block .timer-with-button{
+    float:none;
+    margin: 0 auto;
+}
+.lottery-block .megamillions-block{
+    margin-top: -25px;
+}
+.single-jackpot-block .lottery-button{
+    line-height: 38px;
+    padding-top: 0;
+    max-height: 40px;
+}
+.single-jackpot-block .lottery-button span{
+    display: inline-block;
+    line-height: 19px;
+}
+.single-jackpot-block.bottom-top-jackpot-block .text-1{
+    max-height: 41px;
+    overflow: hidden;
+}
+.single-jackpot-block .jackpot-block{
+    width: 40%;
+}
+.single-jackpot-block .lottery-block{
+    width: 30%;
+}
+
+/* Responsive. */
+
+@media all and (max-width: 1200px){
+    .right-jackpots-block{
+        width: 100% ;
+    }
+    .right-jackpots-block .logo-with-name{
+        float: none;
+        width: auto;
+        margin: 0 auto;
+    }
+    .right-jackpots-block .timer-with-button{
+        float: none;
+        margin: 0 auto;
+    }
+    .right-jackpots-block .logo-block{
+        float: none;
+        margin: 2px auto;
+    }
+    .right-jackpots-block .lottery-jackpot{
+        text-align: center;
+    }
+    .right-jackpots-block .logo-block{
+        height: auto;
+        width: auto;
+        background: none;
+        margin-left: 10px;
+    }
+    .right-jackpots-block .logo-block img{
+        max-width: 130px;
+        padding-top: 0;
+    }
+}
+@media all and (min-width: 992px) and (max-width: 1450px){
+    .double-jackpot-title{
+        font-size: calc(4px + 1.5vw);
+        margin: 0 auto;
+        max-width: 85%;
+        max-height: 45px;
+        overflow-y: hidden;
+    }
+    .bottom-top-jackpot-block{
+        height: 130px;
+        font-size: 14px;
+    }
+    .block-background{
+        background-size: auto 100%, auto 100%;
+        height: 128px;
+    }
+    .bottom-top-jackpot-block .text-1{
+        padding-top: 10px;
+        line-height: 12px;
+        max-height: 22px;
+        overflow-y: hidden;
+    }
+    .bottom-top-jackpot-block .text-2{
+        padding-top: 10px;
+        line-height: 15px;
+        max-height: 25px;
+        overflow-y: hidden;
+    }
+    .bottom-top-jackpot-container{
+        margin: 0 auto;
+        width: calc(100% - 10px);
+    }
+    .lottery-block{
+        width: 30%;
+    }
+    .timer-with-button{
+        margin-top: -20px;
+        width: 60%;
+    }
+    .jackpot-block{
+        width: 40%;
+        background-position: center 18px;
+        background-size: auto 75px;
+    }
+    .jackpot-price.money{
+        margin-top: -8px;
+        min-height: 55px;
+        line-height: 50px;
+        font-size: 40px;
+    }
+    .logo-block{
+        width: 30%;
+    }
+    .lottery-button{
+        width: 144px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 16px;
+        padding-top: 4px;
+        letter-spacing: 0.5px;
+    }
+    .right-jackpots-block .lottery-button{
+        padding-top: 0;
+    }
+    .logo-block{
+        height: 75px;
+        width: 75px;
+        background: url(/public/img/bottom-jackpot/lottery-ball-no-shadow.png) center no-repeat;
+        background-size: contain;
+        margin-left: 10px;
+        margin-top: 16px;
+    }
+    .logo-block img{
+        text-align: center;
+        padding-top: 25px;
+        max-width: 70px;
+    }
+    .megamillions-block .logo-block{
+        margin-left: 15px;
+    }
+    .powerball-block .logo-block{
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+    .timer-container{
+        text-align: center;
+    }
+    .timer-container .draw-background{
+        width: 40px;
+        height: 40px;
+        background-size: contain;
+        margin-left: -7px;
+        float: none;
+        display: inline-block;
+    }
+    .timer-container .draw-background:first-of-type{
+        margin-left: 0;
+    }
+    .timer-title{
+        text-align: center;
+        font-size: 10px;
+    }
+    .timer-container .draw-background .popup-draw-text{
+        font-size: 7px;
+        font-weight: 700;
+    }
+    .timer-container .draw-background .popup-draw-value{
+        font-size: 18px;
+        height: 21px;
+        line-height: 24px;
+    }
+    .right-jackpots-block .timer-container .draw-background{
+        margin-left: -11px;
+    }
+    .right-jackpots-block .timer-with-button{
+        margin-top: 0;
+    }
+    .timer-title{
+        color: #ffffff;
+    }
+    .right-jackpots-block .logo-block{
+        margin-top: 2px;
+    }
+    .single-jackpot-block .logo-block{
+        width: 100%;
+        height: 80px;
+        background-size: contain;
+        margin-top: 5px;
+        margin-left: -15px;
+    }
+    .single-jackpot-block .logo-block img{
+        max-width: 65%;
+        padding-top: 12px;
+        margin-right: 30px;
+    }
+    .single-jackpot-block .jackpot-block{
+        background-size: auto 70px;
+    }
+    .single-jackpot-block .timer-with-button{
+        margin: -18px 0 0;
+        float: right;
+    }
+    .lottery-block .megamillions-block{
+        margin-top: -17px;
+    }
+}

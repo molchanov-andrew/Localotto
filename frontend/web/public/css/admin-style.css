@@ -1,0 +1,336 @@
+*{
+	transition: all 0.7s;
+}
+body{
+	background-color: rgb(37, 37, 37);
+  	color: white;
+  	transition: all 0.7s;
+}
+body > h1 {
+	padding-left: 50px;
+}
+body input{
+  color:rgb(37, 37, 37);
+}
+.login-form {
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 50%;
+  height: 150px;
+  opacity: 0;
+  background-color:  whitesmoke;
+  color: rgb(37, 37, 37);
+}
+.login-form input{
+  float: right;
+  padding: 5px;
+  margin: 3px;
+}
+.login-form input[type=submit] {
+  background: rgb(37, 37, 37);
+  color: white;
+  border: 0px;
+  border-radius: 2px;
+  padding: 7px;
+}
+.login-form table{
+  color: rgb(37, 37, 37);
+}
+.login-form{
+  animation: animationFrames linear 1.3s;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+  -webkit-animation: animationFrames linear 1.3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation: animationFrames linear 1.3s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 50% 50%;
+  -moz-animation-fill-mode: forwards;
+  -o-animation: animationFrames linear 1.3s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 50% 50%;
+  -o-animation-fill-mode: forwards;
+  -ms-animation: animationFrames linear 1.3s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 50% 50%;
+  -ms-animation-fill-mode: forwards;
+}
+
+@keyframes animationFrames{
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes animationFrames {
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  100% {
+    opacity: 1;
+    
+  }
+}
+
+span.count {
+  display: block;
+  width: 100%;
+  font-size: 900%;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgb(116, 115, 115),-1px -1px 1px rgb(132, 127, 127);
+}
+span.count-name {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+.count-language {
+  background-color: rgb(99, 42, 161);
+  cursor: pointer;
+}
+.count-countries {
+  background-color: rgb(113, 129, 11);
+  cursor: pointer;
+}
+.count-currencies {
+  background-color: rgb(128, 157, 219);
+  cursor: pointer;
+}
+.count-payment-methods {
+  background-color: rgb(158, 73, 73);
+  cursor: pointer;
+}
+.count-bonuses {
+  background-color: rgb(67, 50, 215);
+  cursor: pointer;
+}
+.count-lotteries {
+  background-color: rgb(200, 167, 38);
+  cursor: pointer;
+}
+.count-brokers {
+  background-color: rgb(91, 90, 92);
+  cursor: pointer;
+}
+.count-pages {
+    background-color: #267571;
+}
+.count-translations {
+    background-color: #7F206F;
+}
+.count-contacts {
+    background-color: #328043;
+}
+.count-sitemap {
+  background-color: #224b80;
+}
+
+
+.count-language:hover {
+  background-color: rgb(136, 52, 228);
+}
+.count-countries:hover {
+  background-color: rgb(175, 195, 47);
+}
+.count-currencies:hover {
+  background-color: rgb(41, 107, 247);
+}
+.count-payment-methods:hover {
+  background-color: rgb(221, 84, 84);
+}
+.count-bonuses:hover {
+  background-color: rgb(99, 84, 229);
+}
+.count-lotteries:hover {
+  background-color: rgb(247, 197, 0);
+}
+.count-brokers:hover {
+  background-color: rgb(105, 103, 107);
+}
+.count-pages:hover {
+    background-color: #32ADA7;
+}
+.count-translations:hover {
+    background-color: #BD53AB;
+}
+.count-contacts:hover {
+    background-color: #2EA748;
+}
+ul.main-menu {
+  list-style: none;
+}
+ul.main-menu li {
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+ul.main-menu li:hover {
+  background-color: rgb(132, 0, 255);
+}
+/* Adding Forms */
+.newDataForms {
+  padding: 10px;
+  border-radius: 3px;
+}
+.spoiler{
+  cursor: pointer;
+}
+.spoiler .spoiler-btn:hover{
+
+}
+
+form.newDataForms input{
+  padding: 7px;
+  border-radius: 2px;
+  border: 1px solid rgb(131, 124, 124);
+  margin: 5px;
+  width: 100%;
+}
+
+form.newDataForms table {
+  margin-bottom: 20px;
+}
+
+form.newDataForms > table tr:nth-child(odd) {
+  margin-bottom: 20px;
+  background-color: rgba(252, 255, 254, 0.09);
+}
+form.newDataForms table select, form.newDataForms select{
+  color: gray;
+  padding: 7px;
+  border-radius: 2px;
+  border: 1px solid rgb(131, 124, 124);
+  margin: 5px;
+  width: 100%;
+}
+
+form.newDataForms span.submit {
+  padding: 10px;
+  background-color: cornflowerblue;
+}
+form.newDataForms span{
+  display: inline-block;
+}
+form.newDataForms .lottery-options {
+  width: 100%;
+  overflow: hidden;
+}
+div.search select{
+  background: white;
+  color: gray;
+  padding: 5px;
+  border-radius: 3px;
+}
+.newContact {
+    background-color: #3E90B7;
+}
+h3.spoiler-btn span{
+    color: #E24072;
+}
+.table .td{
+  border-bottom: 1px solid rgb(58, 57, 57);
+}
+.empty-i18n{
+  background: #F3E9E9;
+}
+.done-i18n{
+  background: #A1D48C;
+}
+#toTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  color: #333;
+  font-family: verdana;
+  display: block;
+  background-color: #C6C5D1;
+  color: #969088;
+  width: 50px;
+  height: 50px;
+  font-family: 'Glyphicons Halflings';
+  border-radius: 6px;
+  opacity: 0.6;
+}
+#toTop:before {
+    content: "\e093";
+}
+#brokersPositions{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.show-voters {
+  width: 100%;
+  background: #fff;
+  color: #000;
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+
+.show-voters td, th {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.show-voters tbody tr:nth-child(even) {
+  background: #d9edf7;
+}
+
+.show-voters th {
+  border: none;
+  color: #fff;
+  background: #4CAF50;
+}
+.publish-checkbox{
+  width: auto;
+}
+.ui-menu, .ui-menu *{
+  transition: none;
+}
+.main-page-thing{
+  cursor: pointer;
+}
+.main-admin-menu i{
+  margin-right: 10px;
+}
+.newDataForms .btn.btn-primary.submit{
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+.no-image-lottery{
+  padding: 10px;
+  width: 220px;
+  height: 68px;
+  background-color: #20397a;
+}
+input[type=checkbox].banner-checkbox {
+  display: block;
+  float: left;
+  margin-right: 10px;
+}
+#deleteChosenBanners{
+  margin-bottom: 20px;
+}

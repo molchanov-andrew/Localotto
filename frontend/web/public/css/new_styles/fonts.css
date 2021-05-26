@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "Myriad Pro Regular";
+    src: url("../../fonts/MyriadProRegular.eot");
+    src: url("../../fonts/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/MyriadProRegular.woff") format("woff"),
+    url("../../fonts/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Myriad Pro Bold";
+    src: url("../../fonts/MyriadProBold.eot");
+    src: url("../../fonts/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/MyriadProBold.woff") format("woff"),
+    url("../../fonts/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../../fonts/OpenSansRegular.eot");
+    src: url("../../fonts/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/OpenSansRegular.woff") format("woff"),
+    url("../../fonts/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../../fonts/myriad-set-pro_ultralight.woff") format("woff"), url("../../fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 100;
+    src: url("../../fonts/myriad-set-pro_ultralight-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_ultralight-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: url("../../fonts/myriad-set-pro_thin.woff") format("woff"), url("../../fonts/myriad-set-pro_thin.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 200;
+    src: url("../../fonts/myriad-set-pro_thin-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_thin-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../fonts/myriad-set-pro_text.woff") format("woff"), url("../../fonts/myriad-set-pro_text.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url("../../fonts/myriad-set-pro_text-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_text-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 500;
+    src: url("../../fonts/myriad-set-pro_medium-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_medium-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../../fonts/myriad-set-pro_semibold.woff") format("woff"), url("../../fonts/myriad-set-pro_semibold.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 600;
+    src: url("../../fonts/myriad-set-pro_semibold-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_semibold-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: italic;
+    font-weight: 700;
+    src: url("../../fonts/myriad-set-pro_bold-italic.woff") format("woff"), url("../../fonts/myriad-set-pro_bold-italic.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Myriad Set Pro';
+    font-style: normal;
+    font-weight: 100;
+    src: url("../../fonts/myriad-set-pro_ultralight.woff") format("woff"), url("../../fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+    *src: url('');
+}
+@font-face {
+    font-family: 'Glyphicons Halflings';
+    src: url('../../fonts/glyphicons-halflings-regular.eot');
+    src: url('../../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+}
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../../fonts/OpenSansLight.eot");
+    src: url("../../fonts/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../../fonts/OpenSansLight.woff") format("woff"),
+    url("../../fonts/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

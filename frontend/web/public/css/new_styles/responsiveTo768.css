@@ -1,0 +1,2756 @@
+/* The division styles on groups is not means that this style works for only some group,
+    I specified that styles in first time i had to do them,
+    so if i used it somewhere else - i didn't moved or dublicated them. */
+.hidden{
+    display: none;
+}
+@media (max-width: 767px) {
+    body{
+        color: #000000;
+    }
+    /* Resets */
+    *:focus{
+        border: inherit;
+    }
+    .form-control:focus{
+        border: 1px solid #66afe9;
+    }
+    .nav.navbar-nav.navbar-right.blue .btn-group, .nav.navbar-nav.navbar-right.blue .btn-group-vertical{
+        width:auto;
+    }
+    .no-padding-mobile{
+        padding:0;
+    }
+    .cancel-mobile-container{
+        margin-left: -35px;
+        margin-right: -35px;
+    }
+    .to-right-mobile{
+        float: right;
+    }
+    .mobile-collapsible{
+        transition: opacity 1s ease-out;
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    .mobile-collapsible.opened{
+        opacity: 1;
+        height: auto;
+    }
+    .row-mobile-only{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /* End resets */
+    /* Carousel fade */
+
+    .carousel-fade .carousel-inner .item {
+        opacity: 0;
+        transition-property: opacity;
+    }
+
+    .carousel-fade .carousel-inner .active {
+        opacity: 1;
+    }
+
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .carousel-fade .carousel-inner .next.left,
+    .carousel-fade .carousel-inner .prev.right {
+        opacity: 1;
+    }
+
+    .carousel-fade .carousel-control {
+        z-index: 2;
+    }
+    @media all and (transform-3d), (-webkit-transform-3d) {
+        .carousel-fade .carousel-inner > .item.next,
+        .carousel-fade .carousel-inner > .item.active.right {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        .carousel-fade .carousel-inner > .item.prev,
+        .carousel-fade .carousel-inner > .item.active.left {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+        .carousel-fade .carousel-inner > .item.next.left,
+        .carousel-fade .carousel-inner > .item.prev.right,
+        .carousel-fade .carousel-inner > .item.active {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    /* End Carousel fade */
+    /* Round Loading bar */
+    .progress{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+    }
+    .progress:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 12px solid #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .progress > span{
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    .progress .progress-left{
+        left: 0;
+    }
+    .progress .progress-bar{
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 12px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+    .progress .progress-left .progress-bar{
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+    }
+    .progress .progress-right{
+        right: 0;
+    }
+    .progress .progress-right .progress-bar{
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+    }
+    .progress .progress-value{
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #44484b;
+        font-size: 24px;
+        color: #fff;
+        line-height: 135px;
+        text-align: center;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+    .progress.blue .progress-bar{
+        border-color: #049dff;
+    }
+    .progress.blue .progress-left .progress-bar{
+        animation: loading-2 1.5s linear forwards 1.8s;
+    }
+    .progress.yellow .progress-bar{
+        border-color: #fdba04;
+    }
+    .progress.yellow .progress-left .progress-bar{
+        animation: loading-3 1s linear forwards 1.8s;
+    }
+    .progress.pink .progress-bar{
+        border-color: #ed687c;
+    }
+    .progress.pink .progress-left .progress-bar{
+        animation: loading-4 0.4s linear forwards 1.8s;
+    }
+    .progress.green .progress-bar{
+        border-color: #1abc9c;
+    }
+    .progress.green .progress-left .progress-bar{
+        animation: loading-5 1.2s linear forwards 1.8s;
+    }
+    @keyframes loading-1{
+        0%{
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+    @keyframes loading-2{
+        0%{
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(144deg);
+            transform: rotate(144deg);
+        }
+    }
+    @keyframes loading-3{
+        0%{
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+    @keyframes loading-4{
+        0%{
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+        }
+    }
+    @keyframes loading-5{
+        0%{
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        100%{
+            -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
+        }
+    }
+    @media only screen and (max-width: 990px){
+        .progress{ margin-bottom: 20px; }
+    }
+    /* End Round loading bar */
+    /* UI kit */
+
+    .collapsible-mobile-menu{
+        width:100%;
+        min-height: 40px;
+        font-family: "Myriad Set Pro";
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .collapsible-mobile-menu .menu-container{
+        padding:10px 0 0;
+        font-weight: 400;
+    }
+    .collapsible-mobile-menu .collapsible-mobile-link{
+        max-height:50px;
+        line-height: 50px;
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+        border-bottom:2px solid transparent;
+    }
+    .collapsible-mobile-menu .collapsible-menu-arrow{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border-width: 1px;
+        border-style: solid;
+        display: inline-block;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 5px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        float: right;
+    }
+    .collapsible-mobile-menu .collapsible-menu-title{
+        display: inline-block;
+        width: calc(100% - 45px);
+        line-height: 24px;
+        overflow: hidden;
+        max-height: 48px;
+        vertical-align: middle;
+    }
+    .collapsible-mobile-menu .collapsible-mobile-link[aria-expanded="true"] .collapsible-menu-arrow{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    /* Under discussion */
+    .collapsible-mobile-menu .collapsible-mobile-link.overflown-text[aria-expanded="true"]{
+        max-height:110px;
+        line-height: 24px;
+        padding-top: 2px;
+    }
+    .collapsible-mobile-menu .collapsible-mobile-link.overflown-text[aria-expanded="true"] .collapsible-menu-title{
+        max-height: 96px;
+    }
+    .mobile-single-link{
+        display: block;
+        border-top: 1px solid #fff;
+        height: 50px;
+        line-height: 50px;
+        max-height: 50px;
+        overflow: hidden;
+        width: 100%;
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: underline;
+        font-family: "Myriad Set Pro",sans-serif;
+        font-weight: 600;
+        text-align: left;
+        text-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .mobile-single-link .double-arrow{
+        background: url(/public/img/mobile/white-double-arrow.svg) center no-repeat;
+        width: 20px;
+        height: 50px;
+        float: right;
+        margin-right: 12px;
+    }
+    .mobile-single-link .double-arrow.double-arrow-transparent{
+        background-image: url(/public/img/mobile/stroke-white-double-arrow.svg);
+    }
+    .mobile-single-link .double-arrow.double-arrow-green{
+        background-image: url(/public/img/mobile/stroke-green-double-arrow.svg);
+    }
+    .mobile-single-link .double-arrow.double-arrow-darkblue{
+        background-image: url(/public/img/mobile/stroke-darkblue-double-arrow.svg);
+    }
+    .mobile-single-link .double-arrow-purple{
+        background-image: url(/public/img/mobile/purple-double-arrow.svg);
+    }
+
+    .lottery-head{
+        background: #60a5e8;
+        max-height:62px;
+        min-height: auto;
+        height: 62px;
+        overflow: hidden;
+        vertical-align: middle;
+        padding: 0;
+        margin-top: 0;
+        line-height: 62px;
+    }
+    .head-container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .head-title{
+        font-size: 14px;
+        overflow: hidden;
+        line-height: 14px;
+        max-height: 56px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .lottery-logo-container{
+        margin-top: 20px;
+        background: #60a5e8;
+    }
+    .lottery-logo-container .lottery-logo{
+        max-height:60px;
+        margin-top: 0;
+    }
+    .lottery-jackpot-container{
+        background: #e78f14;
+    }
+    .lottery-head-money-container{
+        max-height: 60px;
+    }
+    .lottery-next-draw-container{
+        background: #05923d;
+    }
+    .lottery-head .jackpot-icon,
+    .lottery-head .next-draw-icon,
+    .lottery-head .lottery-icon{
+        height: 58px;
+        width: 58px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        display: block;
+        margin-top: 2px;
+        background-repeat: no-repeat;
+        background-position: 46% 50%;
+        background-size: 30px 30px;
+    }
+    .lottery-head .timer.timer-underway{
+        font-size: 18px;
+        line-height: 20px;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    .lottery-head .money{
+        max-height: 60px;
+        font-size: 30px;
+        line-height: 60px;
+        text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.8);
+    }
+    .lottery-head .timer{
+        font-size: 18px;
+        line-height: 60px;
+    }
+    .lottery-head .lottery-icon{
+        background-image: url(/public/img/mobile/lottery.svg);
+        background-size: 40px 40px;
+    }
+    .lottery-head .jackpot-icon{
+        background-image: url(/public/img/mobile/jackpot.svg);
+        background-size: 26px 26px;
+    }
+    .lottery-head .next-draw-icon{
+        background-image: url(/public/img/mobile/timer.svg);
+    }
+    .lottery-head-body{
+        padding-bottom: 0;
+        border-bottom: 0;
+        overflow: hidden;
+    }
+    /* End UI kit*/
+    /* Layout */
+
+    .modal-backdrop.fade.in{
+        display: none !important;
+    }
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(/public/img/loading.gif) center no-repeat #fff;
+    }
+    .mobile-title,
+    .expanded-data{
+        line-height: 22px;
+        padding-top: 10px;
+    }
+    .expanded-data img{
+        background-position-x: 0;
+    }
+    .yes-icon{
+        background: url(/public/img/mobile/check.svg) center no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+    .no-icon{
+        background: url(/public/img/mobile/cancel.svg) center no-repeat;
+        width: 20px;
+        height: 20px;
+    }
+    #toTop{
+        background:transparent url(/public/img/mobile/toTop.png) center no-repeat;
+        width: 34px;
+        height: 36px;
+        right: 5px;
+    }
+    #toTop:before,#toTop:after{
+        content: '';
+    }
+    #bs-example-navbar-collapse-1.navbar-collapse{
+        background-color: #3876d7;
+        overflow: visible;
+    }
+    .toggle-menu-mobile{
+        width: 100%;
+        border: 0;
+        outline:0;
+        vertical-align: middle;
+        position: relative;
+        text-align: center;
+        -webkit-box-shadow: 0 2px 3px rgba(5, 31, 73, 0.8);
+        -moz-box-shadow: 0 2px 3px rgba(5, 31, 73, 0.8);
+        box-shadow: 0 2px 3px rgba(5, 31, 73, 0.8);
+    }
+    .toggle-menu-button{
+        position: absolute;
+        left: 30px;
+        height:20px;
+        width:20px;
+        top:10px;
+        border: 0;
+        outline:0;
+        font-size:20px;
+        line-height:14px;
+        color: #fff;
+        background-color: transparent;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .toggle-menu-mobile[aria-expanded="true"]>.toggle-menu-button{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .toggle-menu-button:focus{
+        border: 0;
+    }
+    .mobile-menu-row{
+        background-color: #3876d7;
+        z-index: 3;
+    }
+    .menu-text{
+        color: #ffffff;
+        font-family: "Myriad Pro Bold",sans-serif;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    .navbar-wrapper{
+        margin-top: 0;
+    }
+    header{
+        border-top: 0;
+    }
+    .nav-brand-mobile{
+        background-color: #fff;
+    }
+
+    .nav.navbar-nav > .dropdown .btn-group .dropdown-toggle{
+        font-family: "Myriad Pro Regular",sans-serif;
+        font-weight: 700;
+        display: inline-block;
+        width: 60px;
+        height: 20px;
+        border-radius: 4px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 14px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        line-height: 17px;
+        letter-spacing: 2px;
+    }
+    .nav.navbar-nav > .dropdown .dropdown-toggle span.customized-caret{
+        float: right;
+        line-height: 14px;
+        font-size: 12px;
+    }
+    .nav.navbar-nav > .dropdown .btn-group.open .dropdown-toggle{
+        background-color: #fff;
+        color:#3876d7;
+    }
+    .nav.navbar-nav > .dropdown .btn-group.open .dropdown-toggle span.customized-caret{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    button.btn.btn-default.dropdown-toggle.btn-languages{
+        padding: 2px 3px 2px 10px;
+        overflow: hidden;
+        text-align: left;
+    }
+    #languages.languages-dropdown,
+    #currencies.currencies-dropdown{
+        border:10px solid #fff;
+        border-left: 0;
+        border-right-width:30px;
+    }
+    .nav-brand-mobile{
+        height:70px;
+        padding:16px 0 18px;
+    }
+    .nav-brand-mobile img{
+        margin:0 auto;
+        display: block;
+        max-height: 40px;
+    }
+    .nav.navbar-nav{
+        min-height:50px;
+        padding-top: 10px;
+    }
+    .nav.navbar-nav > .dropdown{
+        text-align: right;
+        float: left;
+        position: static;
+    }
+    .nav.navbar-nav > .dropdown > .btn-group{
+        position: static;
+    }
+    .nav.navbar-nav > .dropdown.languages-li{
+        margin-right: 8px;
+        margin-left:calc(100% - 140px);
+    }
+    .mobile-container{
+        margin:0 35px;
+        width:calc(100% - 70px);
+        display: block;
+    }
+    .mobile-contained-row{
+        margin:0 20px;
+        width:calc(100% - 40px);
+        display: block;
+    }
+    .navbar-nav .dropdown-menu{
+        height:1px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .navbar-nav .open .dropdown-menu{
+        top: 50px;
+        left: 0;
+        position: absolute;
+        height:175px;
+        width:100%;
+        background-color: #fff;
+    }
+    .longer-content-for-menu-over-logo{
+        height:0;
+    }
+    .longer-content-for-menu-over-logo.open{
+        height:143px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+        color: #20397a;
+        font-size: 14px;
+        font-family:'Myriad Pro Regular', sans-serif;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu> li.active > a {
+        font-family:'Myriad Set Pro',sans-serif;
+        font-weight:600;
+        color: #3876d7;
+        background-color: transparent;
+        text-transform: uppercase;
+    }
+    .currency-menu-symbol,
+    .language-menu-iso{
+        width: 30px;
+        margin-right: calc(30vw - 75px);
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .dropdown-menu::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border:1px solid #3876d7;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .dropdown-menu::-webkit-scrollbar
+    {
+        height:150px;
+        width: 7px;
+        background-color: #F5F5F5;
+    }
+
+    .dropdown-menu::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #3876d7;
+    }
+    .tools{
+        background-color: #fff;
+    }
+    .tools .tool{
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 14px;
+        height: 40px;
+        padding: 0;
+        font-weight:600;
+        border-bottom:2px solid #fff;
+        position: static;
+        z-index: 0;
+    }
+    .tools .tool:last-of-type{
+        border-bottom:0;
+    }
+    .tools .tool a{
+        position: static;
+    }
+    .tools .tool img{
+        display: none;
+    }
+    footer{
+        background-color: #3876d7;
+        text-align: center;
+    }
+    .footer-menu{
+        margin:10px 0 0;
+    }
+    .footer-menu .h4{
+        width:100%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        height: 40px;
+        display: inline-block;
+        margin: 0;
+        line-height: 40px;
+        border-top: 1px solid #ffffff;
+        color: #ffffff;
+    }
+    .copyright{
+        background-color: #fff;
+        color: #3876d7;
+    }
+
+    h1{
+        text-align: center !important;
+        font-size: 24px;
+        font-weight: 600;
+        color: #000;
+    }
+    article, p, article p{
+        font-size: 14px;
+        line-height: 24px;
+        color: #000;
+    }
+    article ol,
+    article ul{
+        padding-left: 25px;
+    }
+    article ol{
+        list-style-image: url(/public/img/mobile/greeen-icon-yes.png);
+    }
+    article ul{
+        list-style-image: url(/public/img/mobile/icon-yes.png);
+    }
+    .mobile-grey-content{
+        background-color: #d5eeff;
+    }
+    .table-bordered-top-mobile tr:first-of-type{
+        border-top:1px solid #0c0e6c;
+    }
+    .table-bordered-top-mobile #brokers tr:first-of-type{
+        border-top-color: #2b6d67;
+    }
+    article h1,
+    article h2,
+    article h3,
+    article h4,
+    article h5,
+    article h6,
+    article .h1,
+    article .h2,
+    article .h3,
+    article .h4,
+    article .h5,
+    article .h6{
+        text-align: center !important;
+    }
+    h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+        font-size: 24px;
+        font-family:'Myriad Set Pro';
+        font-weight: 600;
+        text-align: center;
+        color: #000;
+    }
+    .fsz-14-mobile{
+        font-size: 14px;
+    }
+    .pb-10-mobile{
+        padding-bottom: 10px;
+    }
+    .pt-10-mobile{
+        padding-top: 10px !important;
+    }
+    .mt-20-mobile{
+        margin-top: 20px;
+    }
+    .col-no-width-mobile{
+        float: left;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fixed-table-header{
+        display: none !important;
+    }
+    .table>thead.visible-thead-as-block-mobile{
+        display: block !important;
+    }
+
+    .alt-popup{
+        position: relative;
+        height: 0;
+        width: 0;
+        display: inline;
+        text-align: center;
+    }
+    .alt-popup>.under-alt-popup{
+        font-size: 14px;
+        font-family: 'Myriad Set Pro',sans-serif;
+        font-weight: 600;
+        text-align: center;
+        position: absolute;
+        color: #000;
+        background-color: #fff;
+        top: 5px;
+        max-height: 300px;
+        width: auto;
+        max-width: 200px;
+        right: 10px;
+        padding: 2px 5px;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    .expandable-mobile-container .collapsible-mobile-link{
+        cursor: pointer;
+    }
+    /* End Layout */
+    /* Home page*/
+
+    .h1-of-home-page,
+    .second-header-block,
+    .main-header-lastResults span,
+    .main-header-lastNews span{
+        font-size: 24px;
+        line-height: 30px;
+        padding-left:10px;
+        padding-right: 10px;
+        color: #000;
+        font-weight: 600;
+    }
+    .main-header-lastResults,
+    .main-header-lastNews{
+        background-color: transparent;
+        text-align: center;
+        padding: 0;
+        margin-top: 20px;
+    }
+    .main-header-lastNews{
+        padding-bottom: 20px;
+    }
+    .second-header-block{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .mobile-colored-container{
+        background-color: #d5eeff;
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-top: 1px;
+    }
+    .half-round-container{
+        margin-top: 20px;
+        height: 210px;
+        width: 100vw;
+        overflow: hidden;
+    }
+    .round{
+        display: inline-block;
+        margin: 0 1em 1em 0;
+        height:100vw;
+        width:100vw;
+        background-color: #fff;
+        border-top-left-radius: 100vw;
+        border-top-right-radius: 100vw;
+    }
+    .carousel{
+        margin-bottom: 0;
+    }
+    .carousel-indicators{
+        display: block;
+    }
+    .carousel-caption{
+        width: 100%;
+        left: 0;
+        right: 0;
+        text-transform: none;
+        padding-left:0;
+        padding-right: 0;
+    }
+    #lotteryCarousel{
+        height:auto;
+        min-height:210px;
+    }
+    #lotteryCarousel .item img{
+        height: 55px;
+    }
+    #lotteryCarousel .lottery-jackpot{
+        height: 50px;
+        max-width: 100%;
+        margin: 5px 0 0;
+        overflow: hidden;
+    }
+    #lotteryCarousel .lottery-jackpot .money{
+        text-shadow: -1px 1px 0 #0b215b;
+        color: #3876d7;
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+    #lotteryCarousel .lottery-next-draw{
+        font-size: 14px;
+        color: #000;
+        margin: 5px 0 0 -10px;
+        max-height: 24px;
+        overflow: hidden;
+    }
+    #lotteryCarousel .lottery-next-draw .timer{
+        position: relative;
+        top: -3px;
+    }
+    #lotteryCarousel .timer-icon{
+        margin-right: 5px;
+    }
+    .timer-icon{
+        background: url(/public/img/mobile/timer-clock.png) center no-repeat;
+        width: 15px;
+        height: 16px;
+        display: inline-block;
+    }
+    .carousel-inner{
+        min-height: 210px;
+    }
+    #lotteryCarousel .carousel-inner{
+        min-height:210px;
+    }
+    #lotteryCarousel .carousel-indicators{
+        left: -10px;
+        margin-left: 0;
+        bottom:-3px;
+    }
+    #lotteryCarousel .carousel-inner{
+        min-height:210px;
+    }
+    #agentsCarousel .carousel-inner{
+        height: 450px;
+        overflow: hidden;
+    }
+    .carousel-indicators li{
+        border-color: #71b5ed;
+    }
+    #lotteryCarousel .carousel-caption{
+        left: 12.5vw;
+        top: 0;
+        bottom: inherit;
+        width: 75vw;
+    }
+    #lotteryCarousel .buy-now-button {
+        padding:20px 10px 0;
+        position: absolute;
+        bottom:-75px;
+        right:-44px;
+        line-height: 15px;
+        max-height: 100px;
+        overflow: hidden;
+    }
+    .buy-now-button{
+        height: 90px;
+        width:90px;
+        color: #0d1f4c;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 50%;
+        line-height: 20px;
+        padding: 20px 0 0 0;
+        text-transform: uppercase;
+        background: #32c3ff; /* For browsers that do not support gradients */
+        background: -webkit-radial-gradient(#32c3ff,#3383d0); /* Safari 5.1-6.0 */
+        background: -o-radial-gradient(#32c3ff,#3383d0); /* For Opera 11.6-12.0 */
+        background: -moz-radial-gradient(#32c3ff,#3383d0); /* For Firefox 3.6-15 */
+        background: radial-gradient(#32c3ff,#3383d0); /* Standard syntax */
+    }
+    .expand-lottery{
+        background-color: #60a5e8;
+        color: #20397a;
+    }
+    .expand-lottery .collapsible-mobile-link{
+        border-color: #20397a;
+    }
+    .expand-lottery .collapsible-menu-arrow{
+        border-color: #20397a;
+    }
+    .expand-lottery .menu-container{
+        font-size: 14px;
+        color: #ffffff;
+        background-color: #60a5e8;
+        line-height: 35px;
+    }
+    .expand-lottery #homeLotterySliderInfo .mobile-container{
+        padding-bottom: 10px;
+    }
+    .expanded-data{
+        color: #000;
+        text-align: center;
+    }
+    .expanded-data.expand-lottery-numbers{
+        line-height: 17px;
+        padding-top: 9px;
+    }
+    .expand-lottery .expand-lottery-buy-online{
+        border-bottom: 1px solid #fff;
+    }
+    .lotteries-page{
+        background-color: #3358b7;
+        border-top: 0;
+    }
+
+    #agentsCarousel .broker-label{
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 310px;
+        text-align: center;
+        height: 47px;
+        margin: -18px auto 10px;
+    }
+    #agentsCarousel .broker-logo{
+        text-align: center;
+        height:115px;
+        width:auto;
+        overflow: hidden;
+    }
+    #agentsCarousel .broker-logo img{
+        height: 68px;
+    }
+    #agentsCarousel .broker-description{
+        color: #000000;
+        text-shadow: none;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: none;
+        text-align: justify;
+        height: 170px;
+        overflow: hidden;
+    }
+    #agentsCarousel .to-agent-site{
+        background-color: #fff;
+        color: #5faea9;
+        border-top:1px solid #5faea9;
+    }
+    #agentsCarousel .read-agent-review{
+        background-color: #5faea9;
+        border-bottom:2px solid #2b6d67;
+        border-top: 0;
+    }
+    #agentsCarousel .count-lotteries{
+        color: #5faea9;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-shadow: none;
+        font-weight: 600;
+    }
+    #agentsCarousel .carousel-indicators{
+        bottom: 90px;
+    }
+    #agentsCarousel .carousel-indicators li{
+        border-color: #70bbb8;
+    }
+    #agentsCarousel .carousel-indicators li.active{
+        background-color: #70bbb8;
+    }
+
+    .agents-carousel-container .agents-page{
+        border-top: 0;
+        background-color: #21857c;
+        border-bottom:2px solid #2b6d67;
+    }
+    .results-carousel-container .results-lottery-page{
+        background-color: #912deb;
+        border-bottom: 2px solid #380f5d;
+        border-top: 0;
+    }
+    .main-page-allResults.mobile-single-link{
+        background-color: #5900a9;
+        color: #ffffff;
+        border-bottom: 2px solid #380f5d;
+        border-top: 0;
+    }
+    #paginationsToggle.collapsible-mobile-menu{
+        background-color: #0b579b;
+        color: #ffffff;
+        border-bottom: 1px solid #1d3f96;
+    }
+    #paginationsToggle .collapsible-mobile-link{
+        background-color: #0b579b;
+        color: #ffffff;
+    }
+    span.main-lottery-number{
+        background-color: #3876d7;
+    }
+    span.secondary-lottery-number{
+        background-color: #3cad77;
+    }
+    span.bonus-lottery-number{
+        background-color: #5900a9;
+    }
+    span.main-lottery-number,
+    span.secondary-lottery-number,
+    span.bonus-lottery-number{
+        background-image: url(/public/img/mobile/ball-brigths.png);
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        line-height: 17px;
+        padding-top: 5px;
+        font-size: 11px;
+        float: none;
+        margin: 0 0 10px 5px;
+        display: inline-block;
+    }
+    #resultsCarousel .carousel-inner{
+        height:233px;
+    }
+    #resultsCarousel .carousel-indicators{
+        bottom:48px;
+    }
+    #resultsCarousel .carousel-indicators li{
+        border-color: #6e25b8;
+    }
+    #resultsCarousel .carousel-indicators li.active{
+        background-color: #6e25b8;
+    }
+    #resultsCarousel .result-numbers{
+        padding: 20px 0 43px;
+    }
+    #resultsCarousel .lottery-logo img{
+        max-width: 100%;
+        max-height: 50px;
+    }
+    #resultsCarousel .result-date{
+        color: #333333;
+        border: 0;
+        text-shadow: none;
+        padding-top: 10px;
+        font-size: 16px;
+        max-height:38px;
+    }
+    .news-more-link{
+        width: 120px;
+        height: 30px;
+        border-radius: 4px;
+        border: 1px solid #4ca8a0;
+        display: inline-block;
+        float: right;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-align: center;
+        color: #21857c;
+        font-size: 14px;
+        font-family:sans-serif;
+    }
+    #lastNewsMobileInfo{
+        background-color: #fff;
+        color: #000;
+        padding-bottom: 10px;
+        text-align: justify;
+    }
+    .expand-news{
+        background-color: #4ca8a0;
+    }
+    .expand-news .collapsible-mobile-link,
+    .expand-news .collapsible-mobile-arrow{
+        border-color: #063430;
+    }
+    .main-page-allNews{
+        border-top: 0;
+        padding: 0;
+        background-color: #21857c;
+    }
+    #resultsCarousel .lottery-logo{
+        height: 50px;
+    }
+
+    /* End home page */
+    /* Lotteries table */
+
+    .bootstrap-table table,
+    .bootstrap-table tbody,
+    .bootstrap-table tr,
+    .bootstrap-table td
+    {
+        display: block;
+    }
+    table.table,
+    .table>tbody,
+    .table>tfoot,
+    .table>tbody>tr,
+    .table>tbody>tr>td,
+    .table>tbody>tr>th,
+    .table>tfoot>tr>td,
+    .table>tfoot>tr>th
+    {
+        display: block;
+        padding: 0;
+        border-top: 0;
+    }
+
+    .table>thead
+    {
+        display: none !important;
+    }
+
+    .bootstrap-table .table,
+    .bootstrap-table .table>tbody>tr>td,
+    .bootstrap-table .table>tbody>tr>th,
+    .bootstrap-table .table>tfoot>tr>td,
+    .bootstrap-table .table>tfoot>tr>th,
+    .bootstrap-table .table>thead>tr>td{
+        padding:0 !important;
+        border: 0;
+    }
+    .lotteries-table-collapser .mobile-collapser.opened{
+        padding-bottom: 1px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .bootstrap-table{
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .bootstrap-table .table>tbody>tr.lottery-table-item{
+        background-color: #557ee0;
+        border-bottom: 5px solid #20397a;
+    }
+    .lottery-table-logo{
+        width: 100%;
+        padding: 5px 0;
+        background-color: #fff;
+        border-bottom: 2px solid #3c589b;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    .bootstrap-table .table>tbody>tr.lottery-table-item:nth-of-type(even) .lottery-table-logo{
+        background-color: #d5eeff;
+    }
+    .lottery-table-logo img{
+        max-height:60px;
+        padding: 5px 0;
+    }
+    .bootstrap-table .table>tbody>tr.lottery-table-item:nth-of-type(odd){
+        background-color: #557ee0;
+        color: #fff;
+    }
+    .bootstrap-table .table>tbody>tr.lottery-table-item:nth-of-type(even){
+        background-color: #d5eeff;
+        color: #557ee0;
+    }
+
+    .lottery-table-jackpot{
+        font-size: 18px;
+        font-weight: 600;
+        clear: left;
+    }
+    #broker-counter .bootstrap-table .table>tbody>tr>td.lottery-table-jackpot,
+    #broker-counter .bootstrap-table .table>tbody>tr>td.lottery-table-buy-button,
+    #broker-counter .bootstrap-table .table>tbody>tr>td.lottery-table-next-draw,
+    .bootstrap-table .table>tbody>tr>td.lottery-table-jackpot,
+    .bootstrap-table .table>tbody>tr>td.lottery-table-buy-button,
+    .bootstrap-table .table>tbody>tr>td.lottery-table-next-draw{
+        width:33.2%;
+        float: left;
+        text-align: center;
+        padding: 20px 0 !important;
+    }
+    .lottery-table-next-draw{
+        clear: right;
+    }
+    .lottery-table-jackpot .jackpot-icon{
+        background: url(/public/img/mobile/jackpot.svg) center no-repeat;
+        width: 16px;
+        height: 16px;
+        display: block;
+        margin: 0 auto 5px;
+    }
+    .compare-table tbody tr:nth-child(even) .lottery-table-jackpot .jackpot-icon{
+        background-image: url(/public/img/mobile/jackpot-blue.svg);
+    }
+    .lottery-table-next-draw .timer-icon{
+        background: url(/public/img/mobile/timer.svg) center no-repeat;
+        width: 18px;
+        height: 16px;
+        display: block;
+        margin: 0 auto 8px;
+        font-size: 14px;
+    }
+    .compare-table tbody tr:nth-child(even) .lottery-table-next-draw .timer-icon{
+        background-image: url(/public/img/mobile/timer-blue.svg);
+    }
+    .lottery-table-buy-button .buy-button{
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #3358b7;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #3358b7;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+        overflow: hidden;
+    }
+    .compare-table tbody tr:nth-child(even) .lottery-table-buy-button .buy-button{
+        background-color: #3358b7;
+        text-shadow: none;
+        color: #fff;
+    }
+    .compare-table tbody tr:nth-child(odd) .lotteries-table-collapser{
+        color: #fff;
+        border-top:1px solid #fff;
+        clear:left;
+    }
+    .compare-table tbody tr:nth-child(odd) .lotteries-table-collapser .collapsible-menu-arrow{
+        color: #fff;
+        border-color: #fff;
+    }
+    .compare-table tbody tr:nth-child(even) .lotteries-table-collapser{
+        color: #557ee0;
+        border-top:1px solid #557ee0;
+        clear:left;
+    }
+    .compare-table tbody tr:nth-child(even) .lotteries-table-collapser .collapsible-menu-arrow{
+        color:#557ee0;
+        border-color:#557ee0;
+    }
+    .table>tbody>tr>td.lottery-table-country,
+    .table>tbody>tr>td.lottery-table-guess,
+    .table>tbody>tr>td.lottery-table-numbers{
+        line-height: 35px;
+    }
+    .table>tbody>tr>td .mobile-title{
+        text-align: left;
+    }
+    .table>tbody>tr>td .mobile-title,
+    .table>tbody>tr>td .expanded-data{
+        line-height: 22px;
+        padding-top: 10px;
+    }
+
+    .lottery-table-buttons .mobile-single-link{
+        color: inherit;
+        line-height: 50px;
+        background-color: transparent;
+        padding: 0;
+    }
+    .compare-table tbody tr.lottery-table-item:nth-child(even) .mobile-single-link{
+        border-top-color: #557ee0;
+    }
+    .compare-table tbody tr.lottery-table-item:nth-child(even) .mobile-single-link .double-arrow{
+        background-image: url(/public/img/mobile/stroke-blue-double-arrow.svg);
+    }
+    .compare-table tbody tr:nth-child(even) .lotteries-table-collapser .mobile-collapser.opened{
+        border-bottom-color: #557ee0;
+    }
+    /* End Lotteries table */
+    /* Lottery review */
+    .lottery-info-block{
+        margin-top: 0;
+    }
+    .lotto-info{
+        border-top: 2px solid #0c0c6d;
+        background-color: #dfedfb;
+        text-align: center;
+    }
+    .lotto-numbers-date{
+        font-size: 14px;
+        font-weight: 600;
+        text-align: center;
+        color: #000000;
+    }
+    .lotto-info-with-last-results{
+        margin-bottom: 0;
+    }
+    .lotto-numbers-date > .last-result-date:before,
+    .last-result-date > .last-result-date:before,
+    .statistics-title > .last-result-date:before {
+        content: '';
+        display: block;
+    }
+    .lotto-info .inline-numbers{
+        display: inline;
+    }
+    .days-ago-text{
+        font-weight: 400;
+    }
+    #lotto-info{
+        margin-top: 0;
+    }
+    #lotto-info span.main-lottery-number, #lotto-info span.secondary-lottery-number, #lotto-info span.bonus-lottery-number{
+        margin: 15px 0 40px 5px;
+    }
+    .results-dropdown-container{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    #selected_lottery{
+        border-radius: 0px;
+        color: #0c0c6d;
+        font-size: 18px;
+        border-top: 1px solid #0c0c6d;
+        border-bottom: 1px solid #0c0c6d;
+        border-left: 0;
+        border-right: 0;
+        background-color: #dfedfb;
+        box-shadow: none;
+        outline: 0;
+        padding:0 0 3px 0;
+        text-align: left;
+    }
+    #selected_lottery.btn-default.active.focus{
+        background-color: #fff;
+        border-color: transparent;
+    }
+    #selected_lottery .collapsible-menu-arrow{
+        padding-left: 0;
+    }
+    #showResults .dropdown-menu{
+        position: static;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width:100%;
+        color: #0c0c6d;
+        background-color: #dfedfb;
+        font-size: 18px;
+        overflow: visible;
+        height: auto;
+        max-height: initial;
+    }
+    #showResults .dropdown-menu li a {
+        padding: 0;
+        line-height: 50px;
+        color: #0c0c6d;
+        border-top: 0;
+        background-color: #dfedfb;
+    }
+    #showResults .dropdown-menu .dropdown-header,
+    #showResults .dropdown-menu .divider{
+        height: 1px;
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        padding:0;
+        margin: 0;
+    }
+
+    .round-form-element option:hover, .dropdown-menu .dropdown-blue a:hover
+    {
+        background-color: #dfedfb;
+        color: #0c0c6d;
+    }
+    .lottery-page-collapser{
+        margin-bottom: 0;
+    }
+    .lottery-page-collapser .h2{
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 0;
+        margin: 0;
+    }
+    .lottery-page-collapser .mobile-collapser{
+        display: block;
+    }
+    .lottery-page-collapser.collapsible-mobile-menu .collapsible-menu-arrow{
+        padding-left: 0;
+    }
+    .lottery-page-collapser .mobile-collapsible{
+        text-align: center;
+    }
+    .lottery-page-collapser .mobile-collapsible tr td:last-of-type{
+        padding:10px 0;
+    }
+    .lotto-page-lotto-options{
+        text-align: center;
+        font-family: "Myriad Pro Set",sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        height: 30px;
+        width: 100%;
+        background-color: #3876d7;
+        display: block;
+        color: #fff;
+        line-height: 30px;
+    }
+    #brokers tr th,
+    #buy-ticket  tr th,
+    #brokers tr td,
+    #buy-ticket  tr td,
+    #brokers tr th:first-child,
+    #buy-ticket  tr th:first-child,
+    #brokers tr th:last-child ,
+    #buy-ticket  tr th:last-child {
+        width: 100%;
+    }
+    #brokers tr td:first-child,
+    #buy-ticket  tr td:first-child,
+    #brokers tr td:last-child,
+    #buy-ticket  tr td:last-child{
+        width:auto;
+    }
+    #brokers tr td.main-page-brokers-logo,
+    #buy-ticket  tr td.main-page-brokers-logo,
+    #broker-online-buy tr td.main-page-brokers-logo{
+        height:60px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+    }
+    #brokers tr td.main-page-brokers-logo img,
+    #buy-ticket  tr td.main-page-brokers-logo img{
+        padding-top: 5px;
+    }
+    #brokers tr,
+    #buy-ticket tr{
+        border-bottom:5px solid #0c0c6d;
+    }
+    #brokers img.testedBroker,
+    #buy-ticket  img.testedBroker,
+    #brokers img.notTestedBroker,
+    #buy-ticket  img.notTestedBroker{
+        max-height:60px;
+    }
+    #brokers .mobile-title, .compare-broker-table tbody tr td.mobile-title:nth-child(1),
+    #buy-ticket  .mobile-title, .compare-broker-table tbody tr td.mobile-title:nth-child(1){
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    #brokers .button-for-mobile_2,
+    #buy-ticket  .button-for-mobile_2{
+        border-top-color: #10106f;
+        color: #10106f;
+        line-height: 50px;
+        background-color: #E8F1FC;
+        padding: 0;
+    }
+    #brokers .button-for-mobile_2 .double-arrow,
+    #buy-ticket  .button-for-mobile_2 .double-arrow{
+        background-image: url(/public/img/mobile/stroke-darkerblue-double-arrow.svg);
+    }
+    #brokers tr:nth-child(even) .mobile-single-link,
+    #buy-ticket  tr:nth-child(even) .mobile-single-link {
+        background-color: #fff;
+    }
+    #brokers .mobile-single-link.button-red,#brokers tr:nth-child(even) .mobile-single-link.button-red,
+    #buy-ticket  .mobile-single-link.button-red,#brokers tr:nth-child(even) .mobile-single-link.button-red{
+        padding: 0;
+        color: #fff;
+        background-color: #3876d7;
+        border-top: 1px solid #0c0e6c;
+        text-transform: uppercase;
+    }
+    #brokers tr:nth-child(even) .mobile-single-link.button-red .double-arrow,
+    #buy-ticket  tr:nth-child(even) .mobile-single-link.button-red .double-arrow{
+        background-image: url(/public/img/mobile/white-double-arrow.svg);
+    }
+    #brokers tr:nth-child(even) .main-page-brokers-logo,
+    #buy-ticket  tr:nth-child(even) .main-page-brokers-logo{
+
+    }
+    #paginationsToggle {
+        background-color: #60a5e8;
+        color: #fff;
+        padding: 0;
+        border-bottom: 1px solid #0c0c6d;
+    }
+    .expandable-mobile-container h1,
+    .expandable-mobile-container h2,
+    .expandable-mobile-container h3,
+    .expandable-mobile-container h4,
+    .expandable-mobile-container h5,
+    .expandable-mobile-container h6,
+    .expandable-mobile-container .h1,
+    .expandable-mobile-container .h2,
+    .expandable-mobile-container .h3,
+    .expandable-mobile-container .h4,
+    .expandable-mobile-container .h5,
+    .expandable-mobile-container .h6{
+        font-size: inherit;
+        padding: inherit;
+        margin: 0;
+        line-height: inherit;
+        text-align: left !important;
+    }
+    .expandable-mobile-container .mobile-collapsible{
+        padding: 0;
+        margin: 0;
+    }
+    .expandable-mobile-container ol.mobile-collapsible,
+    .expandable-mobile-container ul.mobile-collapsible{
+        padding-left: 30px;
+    }
+    .expandable-mobile-container table.mobile-collapsible{
+        display: none;
+    }
+    .expandable-mobile-container table.mobile-collapsible.opened{
+        display: table;
+        margin-left: -35px;
+        margin-right: -35px;
+        width: calc(100% + 70px) !important;
+        overflow: auto;
+    }
+    .expandable-mobile-container .collapsible-mobile-link{
+        background-color: #60a5e8;
+        color: #0e0f70;
+        border-top: 1px solid #0e0f70;
+    }
+    .expandable-mobile-container .collapsible-mobile-menu:last-of-type .collapsible-mobile-link,
+    .expandable-mobile-container .collapsible-mobile-link[aria-expanded="true"]{
+        border-bottom: 1px solid #0e0f70;
+    }
+    .expandable-mobile-container > .mobile-container>.opened:first-child{
+        margin-top: 20px;
+    }
+    .expandable-mobile-container > .mobile-container>.opened:last-child{
+        margin-bottom: 20px;
+    }
+    .money.ticket-price{
+        width:121px;
+        height: 30px;
+        border: 1px solid #0c0c6d;
+        border-radius: 4px;
+        color: #0c0c6d;
+        background-color: #fff;
+        font-size: 18px;
+        display: block;
+        text-align: left;
+        padding-left: 20px;
+        line-height: 30px;
+    }
+    .currency-sign.can-hover{
+        color: #0c0c6d;
+        font-size: 18px;
+    }
+    .currency-sign.can-hover:after{
+        content: '';
+    }
+    .money .arrow-mobile{
+        position: relative;
+        float: right;
+        margin-right: 14px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+    }
+    .additional-currencies-popup{
+        width: 121px;
+        padding: 0;
+        margin: 0;
+        left: -21px;
+        padding-left: 20px;
+        border: 1px solid #0c0c6d;
+        color: #000;
+        background-color: #fff;
+        top: 25px;
+        border-top: 0;
+        font-size: 16px;
+        border-radius: 0 0 4px 4px;
+    }
+    .ticket-price:hover .arrow-mobile{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    .currency-sign.can-hover:hover .additional-currencies-popup,
+    .additional-currencies-popup:hover{
+        display: none;
+    }
+
+    .hovered-addition .currency-sign.can-hover .additional-currencies-popup,
+    .hovered-addition .currency-sign.can-hover:hover .additional-currencies-popup,
+    .hovered-addition .currency-sign.can-hover .additional-currencies-popup:hover{
+        display: block;
+    }
+    .popover{
+        display: block;
+    }
+    .ticket-price:hover .arrow-mobile{
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+    }
+    .ticket-price.hovered-addition .arrow-mobile,
+    .ticket-price.hovered-addition:hover .arrow-mobile{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    tr:last-of-type .additional-currencies-popup{
+        top: 25px;
+        bottom: auto;
+    }
+    .mt-5{
+        margin-top: 5px;
+    }
+    .mobile-collapsible.opened.lottery-table-buttons,
+    .mobile-collapsible.opened.lottery-table-country{
+        margin-top: 10px;
+    }
+    .fixed-table-container{
+        border: 0;
+    }
+    table.lottery-page-collapser thead{
+        display: block !important;
+    }
+    /* End lottery review */
+    /* Brokers table */
+
+    .brokers-table-container{
+        background-color: #cffcfa;
+    }
+    .brokers-table .expanded-data{
+        color: #2b6d67;
+        font-size: 14px;
+        text-align: left;
+    }
+    .expanded-data.lotteries-count,
+    .expanded-data.bold-expanded-data{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .brokers-table .yes-icon{
+        background-image: url(/public/img/mobile/check-green.svg);
+    }
+    .bootstrap-table .table>tbody#brokers>tr.broker-table-item{
+        background-color: #cffcfa;
+        border-bottom: 5px solid #2b6d67;
+    }
+    .bootstrap-table .table>tbody#brokers>tr.broker-table-item:first-of-type{
+        border-top: 1px solid #2b6d67;
+    }
+    .bootstrap-table .main-page-brokers-logo{
+        width: 100%;
+        padding: 5px 0;
+        background-color: #fff;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    .bootstrap-table .table>tbody#brokers>tr.broker-table-item:nth-of-type(even) .main-page-brokers-logo{
+        background-color: #cffcfa;
+    }
+    .main-page-brokers-logo img{
+        max-height:50px;
+    }
+    .bootstrap-table .table>tbody#brokers>tr.broker-table-item:nth-of-type(odd){
+        background-color: #fff;
+        color: #fff;
+    }
+    .bootstrap-table .table>tbody>tr.broker-table-item:nth-of-type(even){
+        background-color: #cffcfa;
+    }
+    .brokers-table-collapser .mobile-collapser.opened{
+        padding-bottom: 1px;
+        border-bottom: 1px solid #ffffff;
+    }
+    .brokers-table .mobile-collapsible,
+    .brokers-table-collapser{
+        background-color: #7bcbc8;
+        color: #fff;
+    }
+    .brokers-table .mobile-collapsible .yes-icon{
+        background-image: url(/public/img/mobile/check-white.svg);
+    }
+    .brokers-languages-mobile,
+    .brokers-payments-mobile{
+        width: 235px;
+        text-align: center;
+        margin:0 auto;
+    }
+    .brokers-languages-mobile img,
+    .brokers-payments-mobile img{
+        margin-right: 15px;
+    }
+    .brokers-payments-mobile img{
+        margin-bottom: 10px;
+    }
+    .small-collapser{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        float: right;
+        text-align: right;
+    }
+    .brokers-payments-mobile .small-collapser{
+        margin-top: 5px;
+    }
+    .small-collapser > span:first-of-type{
+        font-weight: 600;
+    }
+    .small-collapser .text-to-hide{
+        display: none;
+    }
+    .small-collapser[aria-expanded="true"] .text-to-hide{
+        display: inline;
+    }
+    .small-collapser[aria-expanded="true"] .text-to-show{
+        display: none;
+    }
+    .brokers-table #brokers .mobile-single-link.button-red,
+    .brokers-table .read-agent-review{
+        color: #ffffff;
+        line-height: 50px;
+        border-top: 1px solid #2b6d67;
+    }
+    .brokers-table #brokers .mobile-single-link.button-red{
+        background-color: #5faea9;
+    }
+    .brokers-table #brokers tr:nth-child(even) .mobile-single-link.read-agent-review{
+        background-color: #7bcbc8;
+    }
+    .brokers-table #brokers tr:nth-child(even) .mobile-single-link{
+        background-color: #5faea9;
+    }
+    .brokers-table #brokers .mobile-single-link.button-red, .brokers-table #brokers tr:nth-child(even) .mobile-single-link.button-red{
+        border-top: 1px solid #2b6d67;
+    }
+    .agent-site.main-page-allResults{
+        padding: 0;
+        background-color: #2b6d67;
+        border-bottom: 5px solid #153b38;
+    }
+
+    /* End Brokers table */
+    /* Broker page */
+
+    .right-broker{
+        margin: 0;
+    }
+    .header-inside{
+        color: #000000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: center;
+        background-color: #fff;
+        margin-bottom: 10px;
+    }
+    .info-table{
+        background-color: #cffcfa;
+        border-top: 1px solid #2b6d67;
+    }
+    .info-table tr{
+        margin-left: 35px;
+        margin-right: 20px;
+        width:calc(100% - 55px);
+        margin-top: 10px;
+    }
+    .info-table tr.out-55-line{
+        margin:10px 0 0;
+        width:100%;
+    }
+    .info-table.compare-broker-table tbody tr td:nth-child(2),
+    .info-table.compare-broker-table tbody tr td:nth-child(1){
+        border: 0;
+    }
+    .info-table tr td{
+        float: left;
+        border: 0;
+    }
+    .info-table tr td:nth-of-type(1){
+        width: 40%;
+        clear:left;
+    }
+    .info-table tr td:nth-of-type(2){
+        width: 60%;
+        clear:right;
+    }
+    .info-table tr td.alone-expanded-data{
+        clear: both;
+        width:100%;
+    }
+    .info-table.compare-table tbody tr:nth-child(odd),
+    .info-table.compare-table tbody tr:nth-child(even){
+        background-color: transparent;
+    }
+    .info-table .small-collapser{
+        color: #3a7b75;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+    .info-table .brokers-payments-mobile{
+        margin-top: 10px;
+    }
+    a.link-in-compare-table,
+    button.link-in-compare-table{
+        margin-right: 0;
+        background-color: #5faea9;
+        border-top: 1px solid #2b6d67;
+        border-bottom: 5px solid #2b6d67;
+        line-height: 50px;
+        color: #ffffff;
+        padding: 0;
+    }
+    .banner-under-table{
+        display: none;
+    }
+    #broker-counter .lottery-table-next-draw .money{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    #broker-counter .lottery-table-next-draw .money .currency-sign{
+        display: block;
+        font-size: 24px;
+        line-height: 18px;
+        margin-left: 3px;
+        margin-bottom: 2px;
+    }
+    #broker-counter .main-page-allResults{
+        background-color: #60a5e8;
+    }
+    #broker-counter #paginationsToggle{
+        background-color: #0b579b;
+        border-bottom: 1px solid #1d3f96;
+    }
+    /* End Broker page */
+    /* Statistics page */
+    .long-info-button{
+        background-color: #3876d7;
+        border-bottom: 1px solid #ffffff;
+        margin: 0;
+    }
+    .long-info-button.buy-online-link{
+        text-transform: uppercase;
+    }
+    .bb-5-blue{
+        border-bottom: 5px solid #0c0c6d;
+    }
+    .links-block{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .statistics-head{
+        padding-bottom: 0;
+        background-color: #cde1ff;
+    }
+    .statistics-filter{
+        float:none;
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
+    #statisticsHead .dropdown::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border:1px solid #3876d7;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    #statisticsHead .dropdown::-webkit-scrollbar
+    {
+        height:100px;
+        width: 7px;
+        background-color: #F5F5F5;
+    }
+
+    #statisticsHead .dropdown::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #3876d7;
+    }
+    #statisticsHead .bootstrap-select>.dropdown-toggle,
+    #statisticsHead .bootstrap-select>.dropdown-toggle:active,
+    #statisticsHead .bootstrap-select>.dropdown-toggle:focus,
+    #statisticsHead .bootstrap-select>.dropdown-toggle:hover{
+        border-radius: 0;
+        border: 0;
+        outline: 0;
+        margin:0;
+        background-color: #fff;
+        max-height:60px;
+        padding: 0 35px;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 60px;
+        width: 100%;
+        display: inline-block;
+        color: #0c0c6d;
+        border-top:1px solid #0c0c6d;
+        border-bottom:2px solid #0c0c6d;
+    }
+    #statisticsHead .bs-caret{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        border: 1px solid #0c0c6d;
+        display: inline-block;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 9px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        float: right;
+        font-family:'Glyphicons Halflings';
+    }
+    #statisticsHead .bs-caret .caret{
+        display: none;
+    }
+    #statisticsHead .open .bs-caret{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    #statisticsHead .bs-caret:after{
+        content: "\e080";
+        color: #0c0c6d;
+        top: -2px;
+        position: relative;
+    }
+    #statisticsHead .bs-title-option{
+        display: none;
+    }
+    #statisticsHead .selectpicker {
+        display: none;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-toggle .filter-option{
+        width:calc(100% - 45px);
+        color: #0c0c6d;
+        line-height: 25px;
+        vertical-align: middle;
+        float: none !important;
+        white-space: initial;
+        max-height: 50px;
+        overflow: hidden;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu{
+        position: static;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu.inner{
+        max-height: 250px !important;
+        border-right: 30px solid #fff;
+        border-bottom: 5px solid #fff;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu li{
+        border-top: 1px solid #fff;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        font-size: 18px;
+        color: #ffffff;
+        text-decoration: underline;
+        display: inline-block;
+        font-family: "Myriad Set Pro",sans-serif;
+        font-weight: 600;
+        text-align: left;
+        text-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #statisticsHead .dropdown-menu>li>a{
+        line-height: 50px;
+        color: #0c0c6d;
+        text-decoration: underline;
+        padding:0 35px;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu li.dropdown-header,
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu li.divider{
+        display: none;
+    }
+    #statisticsHead .bootstrap-select.btn-group .dropdown-menu li a.opt{
+        padding-left: 35px;
+    }
+    #statisticsHead .glyphicon.check-mark{
+        display: inline-block;
+        background: url(/public/img/mobile/stroke-darkblue-double-arrow.svg) center no-repeat;
+        color: transparent;
+        width: 20px;
+        height: 50px;
+        float: right;
+        margin-right: 12px;
+    }
+    #statisticsHead .bs-searchbox{
+        padding:4px 35px 10px;
+    }
+    .mobile-current-numbers{
+        margin:0 auto;
+    }
+    .mobile-current-numbers .inline-numbers{
+        display: block;
+        text-align: center;
+    }
+    #numbersArchive{
+        margin: 0 0 20px;
+    }
+    .up-down-3-results{
+        padding:0 35px;
+    }
+    #numbersArchive .up-down-3-results .inline-numbers{
+        padding:5px 0;
+        display: block;
+        text-align: center;
+    }
+    .no-results-statistics{
+        text-align: center;
+    }
+    .other-months-block{
+        margin-bottom: 0;
+    }
+    .other-months-block h4{
+        font-size: 18px;
+        text-align: center;
+        border-top: 1px solid #0c0c6d;
+        border-bottom: 1px solid #0c0c6d;
+        margin: 0;
+        min-height: 50px;
+        line-height: 25px;
+        padding: 10px 0 5px;
+    }
+    .other-months-block .monthly-list{
+        margin: 0;
+        padding: 0;
+    }
+    .other-months-block .monthly-list li{
+        width:100%;
+        padding:0 35px;
+        /*border-top: 1px solid #000000;*/
+        color: #0c0c6d;
+    }
+    .other-months-block .monthly-list li a{
+        color: #0c0c6d;
+        font-size: 18px;
+    }
+    .other-months-block .monthly-list li:last-of-type{
+        /*border-bottom: 1px solid #000000;*/
+    }
+    .mobile-divider{
+        width:75%;
+        height: 1px;
+        background-color: #3876d7;
+        margin: 20px auto 5px;
+    }
+    .statistics-container ~ footer{
+        margin-top: 0;
+    }
+    /* End Statistics page */
+    /* Results pages */
+    .results-page h1,
+    .results-page h2{
+        text-align: center !important;
+    }
+    .results-page .bootstrap-table{
+        margin: 0;
+    }
+    #countriesSelect{
+        height: 240px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border: 15px solid #fff;
+        border-right: 0;
+        border-left: 0;
+    }
+    #countriesSelect .mobile-single-link{
+        height: 50px;
+        line-height: 50px;
+        color: #000;
+        text-decoration: none;
+        padding-right: 10px;
+    }
+    #countriesSelect .collapsible-mobile-link[aria-expanded="true"]{
+        border-bottom: 1px solid #0c0c6d;
+    }
+    #countriesSelect .mobile-single-link img{
+        margin-right: 5px;
+        max-height: 50px;
+    }
+    #countriesSelect::-webkit-scrollbar-track{
+        width: 8px;
+        height: 204px;
+        box-shadow: inset 1px 0 3px #919192;
+        border-radius: 4px;
+        border: 1px solid #9163da;
+        background-color: #ffffff;
+    }
+    #countriesSelect::-webkit-scrollbar{
+        height:150px;
+        width: 7px;
+        border-radius: 4px;
+        border: 1px solid #9163da;
+        background-color: #F5F5F5;
+    }
+    #countriesSelect::-webkit-scrollbar-thumb{
+        width: 8px;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        border: 1px solid #5900a9;
+        background-color: #9163da;
+        background-image: linear-gradient(to left, #380f5d 0%, #9163da 100%);
+    }
+    .choose-country-mobile-menu .collapsible-mobile-link{
+        background-color: #9163da;
+        color: #ffffff;
+        border-top: 1px solid #0c0c6d;
+    }
+    .choose-country-mobile-menu{
+        border-bottom: 1px solid #0c0c6d;
+    }
+    .results-table{
+        background-color: #dceaff;
+    }
+    .results-table tr,
+    .results-table tbody tr:nth-child(even),
+    .results-table tbody tr:nth-child(odd){
+        background-color: #dceaff;
+    }
+    .results-table .lottery-table-image{
+        float: left;
+        width:50%;
+        height:60px;
+        text-align: left; !important; /* overriding bootstrap inline style */
+    }
+    .results-table .lottery-table-image img{
+        max-width:100%;
+        max-height:40px;
+        margin-top: 10px;
+    }
+    .results-table .lottery-table-country,
+    .results-table .lottery-table-draw{
+        float: right;
+        width: calc(50% - 35px);
+        height: 30px;
+        margin-right: 35px;
+        text-align: right !important;
+    }
+    .results-table .lottery-table-numbers{
+        clear: left;
+        box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+    }
+    .results-table .lottery-table-numbers .inline-numbers{
+        display: block;
+    }
+    .results-table .button-for-mobile_2{
+        padding: 0;
+        background-color: transparent;
+        color: #5900a9;
+        border-top-color: transparent;
+    }
+    .results-table .button-red,
+    .results-table .new-button-lotosend,
+    .results-table .new-button-thelotter{
+        color: #ffffff;
+        margin: 0;
+    }
+    .results-table .button-red{
+        background-color: #5900a9;
+        border-top: 1px solid #5900a9;
+        border-bottom:1px solid #5900a9;
+    }
+    .results-table .new-button-lotosend{
+        background-color: #14a33f;
+        border-bottom: 5px solid #186a24;
+        margin: 0;
+    }
+    .results-table .new-button-thelotter{
+        background-color: #3876d7;
+        border-bottom: 5px solid #0c0c6d;
+    }
+    .country-title{
+        display: inline-block;
+    }
+    /* End Results pages*/
+    /* Buy online */
+
+    .buy-online-action{
+        max-height: 50px;
+    }
+    .buy-online-steps-circles .number-step,
+    .buy-online-steps-circles .description-step{
+        display: block;
+        float: left;
+        text-transform: uppercase;
+        height: 36px;
+        color: #696969;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .buy-online-steps-circles .number-step{
+        width: 37px;
+        border: 1px solid #a5a5a5;
+        border-radius: 50%;
+        margin-right: 12px;
+        margin-left: 4px;
+        text-align: center;
+        line-height: 30px;
+    }
+    .buy-online-steps-circles .description-step{
+        width:calc(100% - 56px);
+        text-align: left;
+        line-height: 40px;
+    }
+    .buy-online-steps-circles .active .number-step{
+        border: 2px solid #3876d7;
+        width: 45px;
+        margin-right: 5px;
+        margin-left: 0;
+        line-height: 36px;
+        font-weight: 600;
+    }
+    .buy-online-steps-circles .active .description-step{
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.76);
+        line-height:50px;
+    }
+    .buy-online-steps-circles .active .number-step,
+    .buy-online-steps-circles .active .description-step{
+        height: 45px;
+        color: #3876d7;
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .buy-step{
+        margin-top: 10px;
+    }
+    .buy-online-steps-circles .buy-step-1 .number-step{
+        border-color: #0c0c6d;
+    }
+    .buy-online-steps-circles .buy-step-1 .description-step,
+    .buy-online-steps-circles .buy-step-1 .number-step {
+        color: #0c0c6d;
+        font-weight: 600;
+    }
+    #buy-ticket.buy-online-table tr:nth-child(even) .mobile-single-link{
+        background-color: #3876d7;
+    }
+    .buy-online-bonuses{
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+    }
+    .table>tbody>tr>td .expanded-data{
+        text-align: left;
+    }
+    #paginationsToggle.buy-step-2-pagination{
+        background-color: #3358b7;
+    }
+    /* End Buy online */
+    /* News */
+    .news-catalog-articles{
+        margin: 0 -15px;
+        text-align: justify;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .news-catalog h3{
+        font-size: 18px;
+        color: #000000;
+        font-weight: 400;
+        line-height: 24px;
+        background-color: #4ca8a0;
+        margin: 0;
+        padding: 10px 35px;
+        margin-bottom: 15px;
+    }
+    .news-catalog-articles a.news-more-link{
+        color: #21857c;
+    }
+    .news-catalog h2 {
+        text-align: center !important;
+    }
+    .news-page h1{
+        text-align: center !important;
+        margin: 0 0 10px -35px;
+        padding: 10px 35px;
+        width: calc(100% + 70px);
+        background-color: #4ca8a0;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .article-image{
+        float:none;
+        margin: 0;
+        width:100%;
+    }
+    .news-catalog-articles .picture{
+        max-width: 100%;
+    }
+
+    /* End News*/
+    /* Compare brokers */
+
+    #compareBrokers .table>thead>tr>td,
+    #compareBrokers .table>tbody>tr>td{
+        padding: 0;
+    }
+
+    #compareBrokers .bootstrap-select>.dropdown-toggle,
+    #compareBrokers .bootstrap-select>.dropdown-toggle:active,
+    #compareBrokers .bootstrap-select>.dropdown-toggle:focus,
+    #compareBrokers .bootstrap-select>.dropdown-toggle:hover{
+        border-radius: 0;
+        border: 0;
+        outline: 0;
+        margin:0;
+        background-color: #5900a9;
+        max-height:50px;
+        padding: 0 35px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 50px;
+        width: 100%;
+        display: inline-block;
+        color: #000;
+        position: relative;
+    }
+    #compareBrokers .bs-caret{
+        height: 40px;
+        width: 40px;
+        border:0;
+        display: inline-block;
+        line-height: 42px;
+        text-align: center;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        transition: all 0.2s;
+        float: right;
+        position: absolute;
+        right: 30px;
+        top:5px;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+        background: url(/public/img/mobile/compare-brokers-select-arrow.png) center no-repeat;
+    }
+    #compareBrokers .bs-caret .caret{
+        display: none;
+    }
+    #compareBrokers .open .bs-caret{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    #compareBrokers .bs-title-option{
+        display: none;
+    }
+    #compareBrokers .selectpicker {
+        display: none;
+    }
+    #compareBrokers .bootstrap-select.btn-group .dropdown-toggle .filter-option{
+        width:100%;
+        color: #000;
+        background-color: #fff;
+        border-radius: 4px;
+        padding-left: 10px;
+        height: 29px;
+        line-height: 29px;
+        vertical-align: middle;
+        float: none !important;
+        white-space: initial;
+    }
+
+    #compareBrokers .basic-value .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+        font-weight: 400;
+    }
+
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu{
+        position: static;
+        float:none;
+        border-color: #5900a9;
+    }
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu.inner{
+        max-height: 250px !important;
+        border-right: 30px solid #fff;
+        border-bottom: 5px solid #fff;
+        overflow-x: hidden;
+    }
+    #compareBrokers .dropdown-menu.inner::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border:1px solid #9163da;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    #compareBrokers .dropdown-menu.inner::-webkit-scrollbar
+    {
+        border-radius: 10px;
+        height:100px;
+        width: 7px;
+        background-color: #6e25b8;
+    }
+    #compareBrokers .dropdown-menu.inner::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: #6e25b8;
+    }
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu li{
+        border-top: 1px solid #fff;
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        font-size: 18px;
+        color: #6e25b8;
+        text-decoration: underline;
+        display: inline-block;
+        font-family: "Myriad Set Pro",sans-serif;
+        font-weight: 600;
+        text-align: left;
+        text-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    #compareBrokers .dropdown-menu>li>a{
+        line-height: 50px;
+        color: #6e25b8;
+        text-decoration: underline;
+        padding:0 35px;
+    }
+    #compareBrokers .dropdown-menu>li.selected.active>a,
+    #compareBrokers .dropdown-menu>li.active>a{
+        color: #fff;
+        background-color: #6e25b8;
+    }
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu li.dropdown-header,
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu li.divider{
+        display: none;
+    }
+    #compareBrokers .bootstrap-select.btn-group .dropdown-menu li a.opt{
+        padding-left: 35px;
+    }
+    #compareBrokers .glyphicon.check-mark{
+        display: none;
+    }
+    #compareBrokers .bs-searchbox{
+        padding:4px 35px 10px;
+    }
+    #compareBrokers .info-table tr td{
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    #compareBrokers .info-table tr td:nth-of-type(2),
+    #compareBrokers .info-table tr td:nth-of-type(3){
+        width:50%;
+        float: left;
+    }
+    #compareBrokers .info-table tr td:nth-of-type(2){
+        padding-right: 5px;
+    }
+    #compareBrokers .info-table tr td:nth-of-type(3){
+        /* 1px is border */
+        padding-left: 5px;
+        width:calc(50% - 1px);
+    }
+    #compareBrokers .info-table tr td:first-of-type,
+    #compareBrokers .info-table tr td.compare-broker-select{
+        width: 100%;
+        float: none;
+        clear: both;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    #compareBrokers .info-table tr td.compare-broker-select:nth-of-type(2){
+        border-right: 0;
+    }
+    #compareBrokers .info-table tr td:first-of-type{
+        color: #5900a9;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px; /* padding coz elements before are floating and have no width, if u know better solution - pls go on. */
+    }
+    #compareBrokers .info-table tr{
+        margin: 0;
+        width: 100%;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    #compareBrokers .compare-broker-select.bordered-select{
+        border-top: 1px solid #ffffff;
+    }
+    #compareBrokers .info-table tr.compare-brand-names{
+        margin:0;
+        border-right: 0;
+    }
+    .compare-brand-names:before,
+    .compare-brand-names:after{
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+    #compareBrokers td:nth-of-type(2){
+        text-align: left;
+        clear: left;
+        position: relative;
+        border-right: 1px solid #000;
+    }
+    #compareBrokers td:nth-of-type(3){
+        text-align: right;
+        clear: right;
+    }
+    #compareBrokers .info-table{
+        background-color: #fff;
+    }
+    #compareBrokers .info-table tr.compare-brand-names:after{
+        border-bottom: 1px solid #380f5d;
+        content: '';
+        display: block;
+        width: calc(100% + 70px);
+        margin-left: -35px;
+        padding-top: 15px;
+    }
+    #compareBrokers .compare-brand-names td{
+        font-size: 18px;
+        font-weight: 700;
+        color: #000000;
+    }
+    #compareBrokers .brokers-languages-mobile,
+    #compareBrokers .brokers-payments-mobile{
+        width: 100%;
+    }
+    #compareBrokers .languages-tr img,
+    #compareBrokers .payments-tr img{
+        max-width: calc(50% - 10px);
+        margin-right: 5px;
+    }
+    #compareBrokers tr td:nth-of-type(3) .brokers-languages-mobile,
+    #compareBrokers tr td:nth-of-type(3) .brokers-payments-mobile{
+        text-align: right;
+    }
+    #compareBrokers .info-table .small-collapser{
+        margin-right:13px;
+        color: #5900a9;
+    }
+    #compareBrokers .info-table tr td:nth-of-type(3) .small-collapser{
+        margin-right: 0;
+    }
+    #compareBrokers .info-table tr.compare-agents-buttons-tr{
+        margin-left: -35px;
+        margin-right: -35px;
+        width:calc(100% + 70px);
+    }
+    #compareBrokers .compare-agents-buttons-tr td:nth-of-type(2) {
+        border-right-color: transparent;
+    }
+    #compareBrokers .compare-agents-buttons-tr td:nth-of-type(2) *:last-child,
+    #compareBrokers .compare-agents-buttons-tr td:nth-of-type(3) *:last-child{
+        border-bottom: 5px solid #380f5d;
+    }
+
+    a.compare-agents-site-button,
+    a.compare-agents-review-button{
+        width: 100%;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        margin: 0;
+        padding: 0;
+    }
+    a.compare-agents-review-button{
+        color: #5900a9;
+        border:1px solid #5900a9;
+        background-color: #fff;
+        display: block;
+    }
+    a.compare-agents-site-button{
+        color: #ffffff;
+        background-color: #5900a9;
+    }
+    .dropdown-backdrop{
+        display: none;
+    }
+    td[name="email1"],
+    td[name="email2"]{
+        -ms-word-break: break-all;
+        word-break: break-all;
+    }
+    /* End Compare brokers */
+    /* Contact us */
+
+    #contactForm input,
+    #contactForm textarea{
+        border-radius: 2px;
+    }
+    #contactForm input:focus,
+    #contactForm textarea:focus{
+        border: 1px solid #cccccc;
+    }
+
+    #contactForm input[value=""]:not(:focus),
+    #contactForm textarea[data-value=""]:not(:focus){
+        background-color:  #e2efff;
+    }
+    #sendContactFormFromCU{
+        font-weight: 600;
+        border-radius: 0;
+        background-color: #0f43f9;
+        border-bottom:3px solid #0F33BD;
+        text-transform: uppercase;
+    }
+    /* End Contact us */
+    #broker-counter tr th, #broker-counter tr td{
+        width: auto;
+    }
+}
+@media all and (max-width: 767px) {
+    #agentsCarousel .broker-description{
+        height: 130px;
+    }
+    #agentsCarousel .carousel-inner{
+        height: 410px;
+    }
+}
+@media all and (max-width: 490px) {
+    #agentsCarousel .broker-description{
+        height: 170px;
+    }
+    #agentsCarousel .carousel-inner{
+        height: 450px;
+    }
+}
+@media all and (max-width: 380px) {
+    #agentsCarousel .broker-description{
+        height: 220px;
+    }
+    #agentsCarousel .carousel-inner{
+        height: 500px;
+    }
+}

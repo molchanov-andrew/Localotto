@@ -1,0 +1,50 @@
+@media all and (min-width: 768px) and (max-width: 991px){
+    .bootstrap-table table.table{
+        margin-top: 0 !important;
+    }
+    #table_fixed{
+        display: none !important;
+    }
+    .bootstrap-table .fixed-table-container .fixed-table-body table thead{
+        display: table-header-group !important;
+    }
+    .bootstrap-table .fixed-table-container .fixed-table-header{
+        display: none !important;
+    }
+    #main-content-on-home-page table tr>td:first-of-type img,
+    .bootstrap-table .compare-table tr td:first-of-type img,
+    .lottery-table-logo img{
+        max-width: 120px;
+    }
+    .fixed-table-container thead th .sortable{
+        padding:8px 3px;
+    }
+    #contain{
+        height: 365px;
+    }
+    table td{
+        text-align: center;
+    }
+    #main-content{
+        max-width: calc(100% + 30px);
+        overflow: hidden;
+    }
+    .lastResultsSection{
+        max-width: calc(100% + 30px);
+    }
+    .lotto-numbers-date{
+        font-size: 20px;
+    }
+    .bootstrap-table .table, .bootstrap-table .table>tbody>tr>td, .bootstrap-table .table>tbody>tr>th, .bootstrap-table .table>tfoot>tr>td, .bootstrap-table .table>tfoot>tr>th, .bootstrap-table .table>thead>tr>td{
+        padding: 8px 3px !important;
+    }
+    .bootstrap-table .fixed-table-container thead th .th-inner{
+        text-overflow: clip;
+        white-space: normal;
+        line-height: 16px;
+    }
+    .news-catalog-articles .picture{
+        margin-top: 25px;
+    }
+    /*.multiple-lines-thead-tablet */
+}

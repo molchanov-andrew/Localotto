@@ -1,0 +1,199 @@
+/* circles */
+.circles-wrapper {
+    margin-top: 26px;
+    margin-bottom: 29px;
+}
+.left-circle {
+    float: left;
+    width: 204px;
+    margin-right: 46px;
+}
+.right-circles {
+    float: left;
+    width: 420px;
+}
+.right-small-circle {
+    float: left;
+    width: 95px;
+    margin-right: 20px;
+}
+.right-small-circle:last-child {
+    margin-right: 0;
+}
+.arrow_box {
+    position: relative;
+    width: 170px;
+    text-align: center;
+    background: #ccdcf5;
+    margin-bottom: 28px;
+}
+.arrow_box_small {
+    position: relative;
+    width: 95px;
+    text-align: center;
+    background: #ccdcf5;
+    word-break: keep-all;
+    margin-bottom: 13px;
+}
+.arrow_box span,
+.arrow_box_small span {
+    line-height: 1em;
+    font-family: 'Calibri';
+    font-weight: 400;
+}
+.arrow_box span {
+    font-size: 24px;
+}
+.arrow_box_small span {
+    line-height: 1.5em;
+    font-size: 16px;
+}
+.arrow_box:after,
+.arrow_box_small:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(204, 220, 245, 0);
+    border-top-color: #ccdcf5;
+}
+.arrow_box:after {
+    border-width: 10px;
+    margin-left: -10px;
+}
+.arrow_box_small:after {
+    border-width: 10px;
+    margin-left: -10px;
+}
+.circle-score-small {
+    width: 88px;
+    height: 88px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.circle-score-big
+,.circle-mobile {
+    width: 170px;
+    height: 170px;
+    position: relative;
+}
+.circle-score-big canvas,
+.circle-score-small canvas,
+.circle-mobile canvas {
+    border-radius: 50%;
+}
+.circle-score-small canvas {
+    border: 7px solid #d3e0f4;
+}
+.circle-score-big canvas,
+.circle-mobile canvas {
+    border: 13px solid #d3e0f4;
+}
+.circle-score-big .inner-circle,
+.circle-score-small .inner-circle,
+.circle-mobile .inner-circle {
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.75);
+}
+.circle-score-big .inner-circle,
+.circle-mobile .inner-circle{
+    width: 96px;
+    height: 96px;
+    top: 22.3529411765%;
+    left: 22.3529411765%;
+}
+.circle-score-small .inner-circle {
+    width: 49px;
+    height: 49px;
+    top: 22.3529411765%;
+    left: 22.3529411765%;
+}
+.circle-score-big .inner-circle span,
+.circle-score-small .inner-circle span
+,.circle-mobile .inner-circle span{
+    display: block;
+    line-height: 1em;
+}
+
+.circle-score-big .inner-circle span:first-child ,
+.circle-mobile .inner-circle span{
+    font-family: "Calibri";
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.circle-score-big .inner-circle span:last-child,
+.circle-mobile .inner-circle span:last-child{
+    margin-top: 8px;
+    font-family: "OpenSansLight";
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.circle-score-small .inner-circle span {
+    font-family: "OpenSansLight";
+    font-size: 24px;
+    margin-top: 12px;
+}
+
+.multiply-scores:nth-child(2n+0) {
+    float: left;
+    margin-top: 20px;
+}
+
+.circle-mobile{
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    .circles-wrapper{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .arrow_box{
+        width: auto;
+    }
+    .circles-wrapper .left-circle{
+        width: auto;
+        margin:0 auto;
+        text-align: center;
+        float: none;
+    }
+    .circle-mobile{
+        display: block;
+        margin: 0 auto;
+    }
+    .collapsing-circles{
+        margin-top: 20px;
+        background-color: #5faea9;
+        color: #ffffff;
+        border-bottom: 5px solid #2b6d67;
+    }
+    .collapsing-circles.collapsible-mobile-menu .collapsible-mobile-link{
+        border-bottom: 1px solid #2b6d67;
+        border-top: 1px solid #2b6d67;
+        text-align: left;
+    }
+    .collapsing-circles .mobile-title{
+        color: #000000;
+        text-align: left;
+    }
+    .collapsing-circles .expanded-data{
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    #collapsingCircles{
+        padding:10px 0 10px;
+    }
+}

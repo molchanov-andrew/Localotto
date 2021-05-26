@@ -1,0 +1,184 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzK-j2U0lmluP9RWlSytm3ho.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzJX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBWV49_lSm1NYrwo-zkhivY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzKaRobkAwv3vxw3jMhVENGA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzP8zf_FOSsgRmwsS7Aa9k2w.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzD0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+.double-popup-body{
+    background-image: url(/public/img/double-jp-popup/double-en.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 742px;
+    height: 570px;
+}
+.double-popup-body.double-fr{
+    background-image: url(/public/img/double-jp-popup/double-fr.png);
+}
+.double-popup-body.double-de{
+    background-image: url(/public/img/double-jp-popup/double-de.png);
+}
+.double-popup-body.double-it{
+    background-image: url(/public/img/double-jp-popup/double-it.png);
+}
+.double-popup-body.double-es{
+    background-image: url(/public/img/double-jp-popup/double-es.png);
+}
+.double-popup-body.double-ru{
+    background-image: url(/public/img/double-jp-popup/double-ru.png);
+}
+.popup-jackpot-price{
+    width: auto;
+    padding-top:285px;
+    padding-bottom: 103px;
+    height: 65px;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 65px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+.popup-jackpot-price.money{
+    font-size: 68px;
+}
+
+/* Timer */
+
+.timer-container{
+    text-align: left;
+    margin-top: 5px;
+}
+.timer-container .draw-background{
+    width: 74px;
+    height: 71px;
+    float: left;
+    text-align: center;
+    margin-left:-12px;
+}
+.timer-container .draw-background .popup-draw-text{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: -14px;
+}
+.timer-container .draw-background .popup-draw-value{
+    font-family: "Myriad Pro",sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 3px;
+}
+.popup-draw-text,
+.popup-draw-value{
+    display: block;
+}
+.megamillions-timer{
+    width:298px;
+    color: #0657a3;
+}
+.powerball-timer{
+    margin-left: 0px;
+    width:350px;
+    color: #ca3337;
+}
+.double-popup-body .megamillions-timer{
+    padding-left: 100px;
+}
+.double-popup-body .powerball-timer{
+    padding-left: 30px;
+}
+
+/* Button */
+.popup-button{
+    width: 240px;
+    padding: 7px 0 12px;
+    color: #ffffff;
+    display: block;
+    font-family: "Open Sans",sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    border-radius: 38px;
+    text-align: center;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    -ms-transition: ease 0.2s;
+    -o-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+.popup-button:hover{
+    background-color: #EB601A;
+    box-shadow: inset 0 -5px 0 #C02A18;
+    color: #fff;
+}
+.powerball-timer .popup-button{
+    box-shadow: inset 0 -5px 0 #9a0000;
+    background-color: #eb250a;
+}
+.powerball-timer .popup-button:hover{
+    box-shadow: inset 0 -5px 0 #b00404;
+    background-color: #ec4b35;
+}
+.megamillions-timer .popup-button{
+    box-shadow: inset 0 -5px 0 #001868;
+    background-color: #0057a4;
+}
+.megamillions-timer .popup-button:hover{
+    box-shadow: inset 0 -5px 0 #0024A3;
+    background-color: #0067BF;
+ }

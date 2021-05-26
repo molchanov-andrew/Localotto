@@ -1,0 +1,926 @@
+@media (min-width: 768px) and (max-width: 991px){
+    #tools{
+        display: block;
+    }
+    .buy-tickets {
+        max-width: 100% !important;
+    }
+    .broker-descriptions.col-lg-3.col-md-3.col-xs-12.col-sm-4
+    {
+        margin-bottom: 25px !important;
+    }
+    .recomend {
+        position: absolute;
+        top: 75% !important;
+        left: 5% !important;
+        width: 94% !important;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 35px !important;
+    }
+    .hide-not-mobile {
+        display: none;
+    }
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(/public/img/loading.gif) center no-repeat #fff;
+    }
+    .exclusive-offer
+    {
+        display: inline-block;
+        width: 47% !important;
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #e65209;
+        border-radius: 5px;
+        background-image: url(/public/img/star.png), url(/public/img/star.png),
+        linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        background-repeat: no-repeat;
+        background-position: -100% center, 200% center;
+        transition-delay: 0s;
+        transition-duration: 0.8s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        background: -moz-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -webkit-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -ms-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)); cursor: pointer;
+    }
+
+    .exclusive-offer:hover
+    {
+        transition-delay: 0s;
+        transition-duration: 0.8s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        background-image: url(/public/img/star.png), url(/public/img/star.png),
+        linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        background: -moz-linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -webkit-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -ms-linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        color: #fff;
+    }
+    .new-button-lotosend
+    {
+        background-color: #14a33f;
+        border-bottom: 2px solid #118c36;
+    }
+    .new-button-lotosend:hover
+    {
+        background-color: #118c36;
+        border-bottom: 2px solid #118c36;
+    }
+    .new-button-thelotter
+    {
+        background-color: #9163DA;
+        border-bottom: 2px solid #6200FF;
+    }
+    .new-button-thelotter:hover
+    {
+        background-color: #6200FF;
+        border-bottom: 2px solid #6200FF;
+    }
+    .header-inside {
+        background-color: rgb(96,165,232);
+    }
+    .header-inside center {
+        padding: 5px;
+    }
+    .header-inside center, .header-inside a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+}
+@media (min-width: 992px) {
+
+    .new-button-lotosend
+    {
+        background-color: #14a33f;
+        border-bottom: 2px solid #118c36;
+    }
+    .new-button-lotosend:hover
+    {
+        background-color: #118c36;
+        border-bottom: 2px solid #118c36;
+    }
+    .new-button-thelotter
+    {
+        background-color: #9163DA;
+        border-bottom: 2px solid #6200FF;
+    }
+    .new-button-thelotter:hover
+    {
+        background-color: #6200FF;
+        border-bottom: 2px solid #6200FF;
+    }
+    .exclusive-offer
+    {
+        display: inline-block;
+        width: 49% !important;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 7px 10px;
+        border-bottom: 2px solid #e65209;
+        border-radius: 5px;
+        background-image: url(/public/img/star.png), url(/public/img/star.png),
+        linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        background-repeat: no-repeat;
+        background-position: 5% center, 95% center;
+        background: -moz-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -webkit-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -ms-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        cursor: pointer;
+        transition-delay: 0s;
+        transition-duration: 0.8s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+    }
+
+    .exclusive-offer:hover
+    {
+        transition-delay: 0s;
+        transition-duration: 0.8s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        background-image: url(/public/img/star.png), url(/public/img/star.png),
+        linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        background: -moz-linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -webkit-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -ms-linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), linear-gradient(to top, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        color: #fff;
+    }
+
+    #first-three-results {
+        max-width: 300px;
+    }
+    #first-three-results .h4{
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #73a5e8
+    }
+    #first-three-results .item {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+    .left-logo-jackpot {
+        display: inline-block;
+        width: 50%;
+        margin-right: 5%;
+        color: #38669a;
+    }
+
+    .left-logo-jackpot img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .left-logo-jackpot p {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        margin: 0 !important;
+        font-weight: normal;
+    }
+
+    .right-button-timer {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        padding-top: 8px
+    }
+
+    .right-button-timer a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 12px;
+        color: #fff;
+        text-decoration: none;
+        background-color: rgb(96, 165, 232);
+        border-bottom: 2px solid rgb(23, 124, 223);
+        padding: 7px 20px;
+        text-align: center;
+        transition: all 0.3s;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    .right-button-timer a:hover {
+        background-color: rgb(242, 109, 128);
+        border-bottom: 2px solid rgb(226, 54, 79);
+        color: white;
+        padding: 7px 20px;
+        text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    .right-button-timer p {
+        text-align: center;
+        font-size: 13px !important;
+        width: 100%;
+    }
+    #bottom-right-results {
+        color: #333 !important;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: none;
+        background-color: #E8F1FC;
+    }
+
+    #bottom-right-results .left-logo-jackpot {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+        color: #38669a;
+        padding-top: 3px;
+    }
+
+    #bottom-right-results .left-logo-jackpot .money {
+        font-weight: normal;
+    }
+
+    #bottom-right-results .left-logo-jackpot img {
+        width: 80%;
+        display: inline-block;
+    }
+
+    #bottom-right-results .left-logo-jackpot p {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        margin: 0 !important
+    }
+
+    #bottom-right-results .left-logo-jackpot p {
+        width: 100%;
+        text-align: center;
+        font-size: 26px;
+        margin: 0 !important
+    }
+
+    #bottom-right-results .right-button-timer {
+        display: inline-block;
+        width: 45%;
+        vertical-align: top;
+        /*padding-top: 25px;*/
+    }
+
+    #bottom-right-results .right-button-timer a {
+        display: block;
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #fff;
+        text-decoration: none;
+        background-color: rgb(96, 165, 232);
+        border-bottom: 2px solid rgb(23, 124, 223);
+        padding: 7px 20px;
+        text-align: center;
+        transition: all 0.3s;
+        border-radius: 5px;
+        font-weight: 700;
+    }
+
+    #bottom-right-results .right-button-timer a:hover {
+        background-color: rgb(242, 109, 128);
+        border-bottom: 2px solid rgb(226, 54, 79);
+        color: white;
+        padding: 7px 20px;
+        text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+    }
+
+    #bottom-right-results .right-button-timer p {
+        text-align: center;
+        font-size: 16px !important;
+        width: 100%;
+    }
+
+    .header-inside {
+        background-color: rgb(96,165,232);
+    }
+    .header-inside center {
+        padding: 5px;
+    }
+    .header-inside center, .header-inside a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .collapse.navbar-collapse .tools{
+        display: flex;
+        margin-top: 50px;
+    }
+    .broker-descriptions.col-lg-3.col-md-3.col-xs-12.col-sm-4
+    {
+        margin-bottom: 25px !important;
+    }
+    .recomend {
+        position: absolute;
+        top: 75%;
+        left: 5% !important;
+        width: 95% !important;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 35px !important;
+    }
+    .simple_hide {
+        display: none;
+    }
+    #toTop {
+        z-index: 200;
+    }
+    #bottom-right-results>div {
+        display: inline-block;
+        width: 33%;
+    }
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url(/public/img/loading.gif) center no-repeat #fff;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1214px)
+{
+    #first-three-results .left-logo-jackpot img {
+        margin-bottom: 6px;
+    }
+    #first-three-results .counter.money {
+        font-size: 18px;
+    }
+    #first-three-results .item {
+        padding-bottom: 6px;
+        padding-top: 6px;
+    }
+    #first-three-results .right-button-timer a
+    {
+        margin-bottom: 6px;
+        padding: 3px 20px;
+    }
+    #first-three-results .right-button-timer p
+    {
+        font-size: 12px !important;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    #bottom-right-results .left-logo-jackpot img
+    {
+        margin-top: 15px !important;
+    }
+
+    #bottom-right-results .right-button-timer a
+    {
+        margin-top: 25px !important;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    #bottom-right-results .left-logo-jackpot p {
+        font-size: 20px;
+    }
+
+    #bottom-right-results .right-button-timer {
+        padding-top: 10px;
+    }
+
+    #bottom-right-results .right-button-timer p{
+        padding-top: 10px;
+    }
+
+    #bottom-right-results .right-button-timer a {
+        margin-bottom: 0px;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .exclusive-offer
+    {
+        display: inline-block;
+        width: 48% !important;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        border-bottom: 2px solid #e65209;
+        border-radius: 5px;
+        background-image: url(/public/img/star.png), url(/public/img/star.png),
+        linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        background-repeat: no-repeat;
+        background-position: -100% center, 200% center;
+        background: -moz-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -webkit-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), -ms-linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1)), linear-gradient(to bottom, rgba(255, 191, 125, 1), rgba(255, 121, 22, 1));
+        cursor: pointer;
+        transition-delay: 0s;
+        transition-duration: 0.8s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+    }
+    .buy-tickets {
+        max-width: 100% !important;
+    }
+}
+@media (min-width: 1500px) {
+    .main-page-brokers-logo {
+        position: relative;
+    }
+    .broker-descriptions.col-lg-3.col-md-3.col-xs-12.col-sm-4
+    {
+        margin-bottom: 15px !important;
+    }
+    .recomend {
+        position: absolute;
+        top: 75%;
+        left: 0 !important;
+        width: 105% !important;
+        text-align: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 47px !important;
+    }
+    .buy-tickets {
+        max-width: 100% !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1080px)
+{
+    .nav>li>a {
+        padding: 0 !important;
+        padding-top: 15px !important;
+        padding-bottom: 7px !important;
+    }
+}
+
+@media (max-width: 619px) {
+    .recomend-mobile {
+        background-size: 85% 85% !important;
+        height: 60px;
+    }
+}
+@media (max-width: 479px) {
+    .recomend-mobile {
+        background-size: 100% 65% !important;
+        height: 60px;
+    }
+}
+@media (max-width: 379px) {
+    .recomend-mobile {
+        background-size: 100% 50% !important;
+        height: 70px;
+    }
+}
+@media (max-width: 344px) {
+    .recomend-mobile {
+        background-size: 100% 50% !important;
+        height: 60px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .collapse.navbar-collapse .tools{
+        display: flex;
+        margin-top: 50px;
+    }
+}
+@media (min-width: 768px) {
+    .tools div{
+        width: 33.3%;
+        float: left;
+    }
+    .tools div:nth-child(7){
+        width: 100%;
+        float: left;
+    }
+    .carousel-caption .h3 {
+        font-size: 24px;
+    }
+}
+@media (min-width: 992px) {
+    .tools div{
+        width: 14.285714286%;
+    }
+    .tools div:nth-child(7){
+        width: 14.285714286%;
+    }
+    .carousel-caption .h3 {
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        font-size: 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .top-menu-items{
+        width: 14.285714286%;
+    }
+    .top-menu-items:nth-child(7){
+        width: 14.285714286%;
+    }
+    .carousel-caption .h3 {
+        font-size: 18px;
+    }
+    .carousel-caption p {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1600px) {
+    .carousel-caption .h3 {
+        font-size: 24px;
+    }
+    .carousel-caption p {
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px){
+    h1,
+    .h1{
+        font-size: 25px;
+    }
+    h2, h3, h4,
+    .h2, .h3, .h4{
+        font-size: 22px;
+    }
+}
+/* media */
+@media (min-width: 768px) and (max-width: 950px) {
+    .left-circle {
+        width: 100%;
+        margin-right: 0;
+    }
+    .circle-score-big {
+        margin: 20px auto;
+    }
+    .left-circle .arrow_box, .right-circles {
+        margin: 0 auto;
+    }
+    .right-circles {
+        float: none;
+    }
+    .multiply-scores:nth-child(1n+0) {
+        float: left;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .col-sm-12.circles-wrapper {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+}
+@media screen and (min-width: 992px)
+{
+    #simLotosendHome .full-width-ban,
+    #simLotosendAgent .full-width-ban
+    {
+        width: 50% !important;
+    }
+
+    #simLotosendResults .full-width-ban,
+    #simLotosendNews .full-width-ban
+    {
+        width: 40% !important;
+    }
+    #simLotosendChoose .full-width-ban
+    {
+        width: 30% !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)
+{
+    #simLotosendHome .full-width-ban,
+    #simLotosendChoose .full-width-ban,
+    #simLotosendAgent .full-width-ban
+    {
+        width: 60% !important;
+    }
+
+    #simLotosendResults .full-width-ban,
+    #simLotosendNews .full-width-ban {
+        width: 50% !important;
+    }
+    #simLotosendChoose .full-width-ban
+    {
+        width: 50% !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px)
+{
+    #simLotosendHome .full-width-ban,
+    #simLotosendChoose .full-width-ban,
+    #simLotosendAgent .full-width-ban
+    {
+        width: 80% !important;
+    }
+
+    #simLotosendResults .full-width-ban,
+    #simLotosendNews .full-width-ban,
+    #simLotosendChoose .full-width-ban
+    {
+        width: 60% !important;
+    }
+}
+@media (min-width: 1025px) {
+    .money {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+@media (max-width: 1090px) {
+
+    #main-table .compare-table tbody tr:nth-child(even) {
+        background-color: #eafddf;
+    }
+    .button-for-mobile {
+        border: 0px;
+        background-color: #0AA07E;
+        border-bottom: 2px solid #08785e;
+        color: #fff !important;
+        text-decoration: none !important;
+        padding: 5px 20px;
+        text-align: center;
+        transition: all 0.3s;
+        margin-bottom: 5px;
+        cursor: pointer;
+        display: block;
+    }
+    #main-content-on-home-page .money,
+    #main-table .card-view .value .money-numbers,
+    #main-table .card-view .value .currency-sign
+    {
+        font-size: 20px;
+    }
+    #main-table td .card-view:nth-child(1) > span.value>br,
+    #main-table td .card-view:nth-child(2) > span.value>br,
+    #main-table td .card-view:nth-child(4) > span.value>span {
+        display: none !important;
+    }
+    #main-table td .card-view:nth-child(2) > span.title,
+    #main-table td .card-view:nth-child(7) > span.title
+    {
+        display: none;
+    }
+    td .card-view:nth-child(3),
+    td .card-view:nth-child(5),
+    td .card-view:nth-child(7)
+    {
+        margin-top: 10px;
+    }
+    td .card-view:nth-child(5) > span.title,
+    td .card-view:nth-child(6) > span.title {
+        font-weight: 700;
+    }
+    #main-table td .card-view:nth-child(5) > span.title,
+    #main-table td .card-view:nth-child(6) > span.title,
+    #main-table .glyphicon.glyphicon-gift {
+        font-size: 20px;
+    }
+}
+@media (max-width: 1049px) {
+    #main-content-on-home-page .money,
+    .card-view .value .money-numbers,
+    .card-view .value .currency-sign {
+        font-size: 1.125em;
+    }
+}
+@media (min-width: 768px) {
+    #not-special-table #slider-for-result-last tr td {
+        width: 15% !important;
+    }
+    #not-special-table #slider-for-result-last tr td:nth-child(3)
+    {
+        width: 40% !important;
+    }
+    #not-special-table #slider-for-result-last tr td:nth-child(2),
+    #not-special-table #slider-for-result-last tr td:nth-child(4) {
+        width: 15% !important;
+    }
+    #not-special-table #slider-for-result-last tr td:nth-child(3) .inline-numbers {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #not-special-table #slider-for-result-last .card-view:nth-child(3) .inline-numbers span {
+        float: none;
+        display: inline-block;
+    }
+    #not-special-table #slider-for-result-last tr td:nth-child(2)>span{
+        text-align: left;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+    .brokers-block .broker-descriptions .pop-up.row>div:first-child {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    #main-table .card-view .value .glyphicon.glyphicon-time,
+    #main-table .card-view .value .timer {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    #main-table .fixed-table-header .compare-table.table.table-hover th{
+        width: 14.2857142857%;
+    }
+    #main-table .fixed-table-header tr th,
+    #main-table .fixed-table-body tr td
+    {
+        width: 14.2857142857%;
+    }
+}
+
+@media (max-width: 768px){
+    .centering, .rating + label.error {
+        text-align: center !important;
+    }
+    #voting-modal input[type="text"],
+    .rating
+    {
+        display: block !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #voting-modal input[type="text"]
+    {
+        width: 50%;
+    }
+    .rating
+    {
+        margin-right: auto !important;
+    }
+    #voting-modal .form-group>label {
+        width: 50%;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #voting-modal .form-group:last-child>label {
+        text-align: center !important;
+    }
+    .vote-buttons-position {
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #voting-modal .vote-rate {
+        float: right;
+    }
+    #voting-modal .vote-close {
+        float: left;
+    }
+    .modal-title {
+        text-align: center;
+    }
+    /*...*/
+}
+@media (max-width: 480px)
+{
+    #voting-modal input[type="text"],
+    .rating
+    {
+        display: block;
+        margin-left: 0;
+    }
+    #voting-modal .vote-close.long-button {
+        width: 100% !important;
+    }
+    #voting-modal input[type="text"]
+    {
+        width: 100%;
+    }
+    .vote-buttons-position {
+        width: 100%;
+    }
+    #voting-modal .vote-close {
+        margin-right: 0;
+    }
+    .modal-title {
+        margin-top: 40px;
+    }
+    #voting-modal .vote-close, #voting-modal .vote-rate {
+        width: 90px;
+    }
+    #voting-modal .form-group>label {
+        margin-left: 0;
+    }
+    .rating {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1025px) {
+    .lotto-page-timer .money{
+        font-size: 30px !important;
+        font-weight: normal !important;
+    }
+}
+
+@media (max-width: 1090px) {
+    td .card-view:nth-child(6) > span.title,
+    #lotto-page-remove td .card-view:nth-child(7) > span.title {
+        display: none !important;
+    }
+
+    #lottories-table-change td .card-view:nth-child(1) > span.value>br
+    #lottories-table-change td .card-view:nth-child(2) > span.value>br {
+        display: none !important;
+    }
+
+    #brokers td .card-view:nth-child(6) > span.title {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .modal-open {
+        overflow: visible;
+    }
+}
+@media(max-width:768px)
+{
+    .long-info-button{
+        margin-bottom: 10px;
+    }
+    .monthly-list li{
+        width:50%;
+    }
+    .statistics-title{
+        max-width: 100%;
+        font-size: 22px;
+    }
+    .statistics-filter{
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+    h2 .last-result-date{
+        font-size: 22px;
+    }
+    .open>.dropdown-menu{
+        left:-30px;
+    }
+    .lotto-numbers-date{
+        margin-bottom: -5px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1300px){
+    .head-title{
+        font-size: 22px;
+    }
+    .lottery-head .money{
+        font-size: 33px;
+    }
+    .lottery-head .timer{
+        font-size: 30px;
+    }
+    .lottery-head .money .money-index{
+        font-size: 33px;
+    }
+}
+@media (max-width: 996px) and (min-width: 768px) {
+    .head-title{
+        font-size: 18px;
+    }
+    .lottery-head .money{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .lottery-head .timer{
+        font-size: 26px;
+        line-height: 28px;
+        text-align: justify;
+    }
+    .lottery-head .money .money-index{
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    .hot-number{
+        width:99%;
+    }
+}
